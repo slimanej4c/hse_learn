@@ -1,0 +1,238 @@
+
+.home-part2-1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
+    top:40%;
+    position: absolute;
+    justify-content: space-around;
+}
+.messions-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.messions-title h1{
+    font-size:60px;
+    font-family:inika_bold;
+    text-decoration: underline;
+    color:var( --mession-font-big-title-color);
+}
+.messions-type{
+
+   display: flex;
+  justify-content: center;
+  overflow: hidden; /* Ajouter cette ligne */
+
+ 
+}
+.mession{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    margin: 25px;
+    align-items: center;
+    background-color: blue;
+    width: 20%;
+    height: 220px;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 0px rgb(57, 87, 2);
+    transform: translateX(-00%);
+    color: var(--mession-font-color);
+
+    border: none;
+    
+}
+.mession-title{
+    display: flex;
+    width:95%;
+    height: 10%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  
+    
+}
+.mession-text{
+    display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+   background-color: rgba(38, 40, 52, 0.7);
+  
+}
+.mession h1{
+    text-align: center;
+    font-family:inika_reg;
+    font-size: 25px;
+    color: var( --mession-font-title-color);
+}
+.mession p{
+   text-align: center;
+   color: #afdf83;
+   font-family:inika_reg;
+   margin: 10px;
+
+}
+.mession .button{
+   
+    font-family:inika_reg;
+    margin: 5px;
+    
+
+  
+ }
+ .btn{
+   
+    font-family:inika_bold;
+    margin: 5px;
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    text-decoration: underline;
+    color: #b3f971;
+    font-size: 16px;
+  
+ }
+.accueil-icon{
+    color: rgb(39, 255, 122);
+    padding: 10px;
+    border: 0px solid rgb(232, 224, 200);
+    border-radius: 10px;
+    background-color: rgba(101, 255, 158, 0.373);
+    box-shadow: 0px 1px 1px 0px rgb(0, 0, 0);
+    width: 50px;
+}
+.prof-part{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+   
+}
+.prof-part1{
+
+    display: flex;
+  
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.prof{
+
+    display: flex;
+  background-color: #b3f971;
+    width: 35%;
+    height: 400px;
+    
+    justify-content: space-around;
+}
+  @media screen and (max-width: 1100px) {
+    .messions-title h1{
+        font-size:50px;
+    
+      
+    }
+    .mession h1{
+        text-align: center;
+        font-size: 18px;
+      
+     
+    }
+    .mession p{
+       text-align: center;
+ 
+       font-size: 12;
+    
+     
+    }
+    .mession{
+      
+        height: 350px;
+   
+    
+     
+    }
+  }
+
+  @media screen and (max-width:750px) {
+    .messions-title h1{
+        font-size:40px;
+    
+      
+    }
+    .messions-type{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 100%;
+        height: 80%;
+     
+    }
+    .mession{
+    
+        width: 100%;
+        height: 370px;
+  
+    
+     
+    }
+    .mession h1{
+      
+      font-size: 18;
+     
+    }
+    .mession p{
+    
+   
+       font-size: 12;
+     
+    }
+   
+
+  }
+  
+  
+  @media screen and (max-width:450px) {
+    .messions-title h1{
+        font-size:35px;
+    
+      
+    }
+    .mession{
+       
+        width: 100%;
+        padding: 0%;
+      
+    
+     
+    }
+    .mession h1{
+      
+      font-size: 14;
+     
+    }
+    .mession p{
+    
+
+       font-size: 11;
+     
+    }
+    
+  }
