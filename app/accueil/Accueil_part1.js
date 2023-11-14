@@ -206,10 +206,7 @@ export const Accueil_part1 = (props) => {
                 <div className='prof-part'>
                   <div className='prof-part1'>
                       <div className='prof'>
-                      <p>hello
-                             
-                                  
-                             </p>
+            
 
                       </div>
                       <div className='prof'>
@@ -217,6 +214,11 @@ export const Accueil_part1 = (props) => {
                   </div>
                   <div className='prof-part1'>
                       <div className='prof'>
+                      <p>hello
+                             
+                                  
+                             </p>
+
                       </div>
                       <div className='prof'>
                       </div>
