@@ -168,8 +168,8 @@ const link_array_logout = [
                       {link_array[0]['FR'].map((item) => {
                         if (item.title==='Logout'){
                           return(
-                            <div className="div-btn" >
-                                <div className="div-btn-line" >
+                            <div className="div-btn" key={item.id}>
+                                <div className="div-btn-line" key={item.id} >
                                 
                                </div>
                                <button onClick={()=>logout()}>Logout</button>
@@ -181,8 +181,8 @@ const link_array_logout = [
                         }
                         else if (item.title==='Login') {
                           return(
-                            <div className="div-btn" >
-                               <div className="div-btn-line" >
+                            <div className="div-btn" key={item.id} >
+                               <div className="div-btn-line" key={item.id} >
                                 
                                 </div>
                              <button onClick={()=>logout()}>S'identifier</button>
