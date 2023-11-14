@@ -1,6 +1,6 @@
 "use client"
-import React from 'react'
-import { useState, useEffect } from "react";
+
+import React ,{ useState, useEffect } from "react";
 import { connect } from 'react-redux'
 import { motion, AnimatePresence } from "framer-motion"
 import {missions_text ,missions_title ,missions_image} from './missions'
@@ -206,7 +206,10 @@ export const Accueil_part1 = (props) => {
                 <div className='prof-part'>
                   <div className='prof-part1'>
                       <div className='prof'>
-            
+                      <p>hello
+                             
+                                  
+                             </p>
 
                       </div>
                       <div className='prof'>

@@ -1,6 +1,6 @@
 'use client';
 import { connect } from 'react-redux'
-import React, { Component ,useState,useEffect} from 'react'
+import React, { useState,useEffect} from 'react'
 import {fetchFormations} from '../../Redux';
 import {fetchGroupe} from '../../Redux';
 //1108abcd

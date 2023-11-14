@@ -1,12 +1,10 @@
 'use client';
 
-import React, { Component ,useState,useEffect} from 'react'
+import React, { useState,useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import { connect } from 'react-redux';
-import Cookies from 'js-cookie';
-import localStorage from 'redux-persist/lib/storage';
-import AsyncStorage from 'redux-persist/lib/storage';
+
 import { Logout_redux } from '../Redux';
 import { Login_store} from '../Redux';
 const navbar = (props) =>{
