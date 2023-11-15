@@ -1,4 +1,8 @@
 /* Styles for the 'home-all' container */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .home-all-section {
   display: flex;
   flex-direction: column;
@@ -17,7 +21,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 255, 98);
-    height: 2100px;
+    height: 2300px;
     width: 100%;
   }
   .section2{
@@ -66,41 +70,42 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
-    width: 50%;
-    left: 10%;
+    width: 70%;
+    left: 15%;
     opacity: 0.9;
     z-index: 2;
+    background-color: rgba(255, 254, 254, 0.8);
     top:15%;
    
   }
   
   .presentation-title h1 {
-    font-size: 4rem;
-    font-family:inika_bold;
-    
+    font-size: 3rem;
+
+    color: rgb(57, 57, 185);
   }
   
   .presentation-title p {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: -1rem;
-    font-family:inika_reg;
-  
+    
+    color: rgb(16, 41, 65);
   }
   .presentation-title button {
-    background-color: #0cf671;
-    border: 1px solid #13aa52;
-    width: 400px;
+    background-color: #C8FF6D;
+    border: 1px solid #C8FF6D;
+    width: 300px;
     height: 100%;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
     box-sizing: border-box;
-    color: rgb(24, 14, 0);
+    color: #0047FF;
     cursor: pointer;
-    font-family:inika_reg;
+   
     font-size: 25px;
     font-weight: 400;
     outline: none;
-    margin-top: 100px;
+    margin-bottom: 20px;
     outline: 0;
     padding: 10px 25px;
     text-align: center;
@@ -158,7 +163,7 @@
    height: 700px;
     position: absolute;
     z-index: 7;
-    top: 20%;
+    top: 22%;
     background-repeat: no-repeat;
  
  
@@ -173,7 +178,7 @@
  bottom: 0%;
 
  background-repeat: no-repeat;
- opacity: 0.6;
+ opacity: 0.8;
  z-index: 0;
 
 

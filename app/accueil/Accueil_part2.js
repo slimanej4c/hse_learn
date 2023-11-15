@@ -70,7 +70,7 @@ export const Accueil_part2 = (props) => {
                          
                             <div className='mession-text'>
                             <FontAwesomeIcon icon={faHandsHelping}  className="accueil-icon"  style={{fontSize:50 }}  onClick={()=>openwhatsapp()}/>
-                        
+                            
                               <p>{missions_text[1][props.langue]}
                              
                               
