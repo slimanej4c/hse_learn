@@ -1,11 +1,16 @@
 export const images_presentation = [{'image': '/static/images/image2.jpg',
 'image_fixed' :'/static/images/image3.jpg',
+'svg_prof1' :'/static/images/svg2.svg',
+'svg_prof2' :'/static/images/svg3.svg',
+'prof_img1' :'/static/images/img1.jpg',
+'prof_img2' :'/static/images/img2.jpg',
 'color': '#14162F', 'id': 1 ,'fcolor':"#E0A200",'svg':'/static/images/svg1.svg'},
  ]
 export const titles_presentation = [
     {
       "FR": [
-        {"title": "Ecole de formation en HSE", "text": "Façonnons un Avenir Plus Sécuritaire"},
+        {"title": "Ecole de formation en HSE", 
+        "text": "Façonnons un Avenir Plus Sécuritaire"},
        
       ],
       "ENG": [

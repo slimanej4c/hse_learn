@@ -12,9 +12,7 @@ export default function Home() {
   </section>
   <section className='section2' >
    
-             
-          
-    
+   
    </section>
   </div>
   
