@@ -64,7 +64,7 @@ export const Accueil_part1 = (props) => {
     hidden: { opacity: 0, x: "-100%" }
   };
   return (
-    <section className='home-part1'>
+
       <div
         className='home-part1-1'
         style={{
@@ -108,150 +108,8 @@ export const Accueil_part1 = (props) => {
 
       </div>
 
-      <div
-        className="presentation-img-fixed"
-        style={{ backgroundImage: `url(${images_presentation[0].image_fixed})` }}
-
-      />
-
-
-      <div
-        className="presentation-sous-svg"
-        style={{ backgroundImage: `url(${images_presentation[0].svg})` }}
-
-        key={0}
-      />
-
-      <div className='home-part2-1'>
-        <div className='formations-title'>
-          <h1>{formation_title[0]['FR']}</h1>
-        </div>
-
-        <div
-          className='formation-container'>
-          <div className='formations-type'>
-
-
-            <AnimatePresence key={formation_text[0]['FR'].id}>
-              <motion.div
-                className='formation'
-                key={formation_text[0]['FR'].id}
-                variants={mession_itemVariants}
-
-                viewport={{ once: true }}
-                initial='hidden'
-                whileInView='visible'
-
-              >
-
-                <div className='formation-text'>
-                <h1>{formation_text[0]['FR'].title}
-
-
-                  </h1>
-                  <p>{formation_text[0]['FR'].text}
-
-
-                  </p>
-
-                </div>
-
-              </motion.div>
-            </AnimatePresence>
-
-            <AnimatePresence key={formation_text[1]['FR'].text}>
-              <motion.div
-                className='formation'
-                key={formation_text[1]['FR']}
-                variants={mession_itemVariants}
-
-                viewport={{ once: true }}
-                initial='hidden'
-                whileInView='visible'
-              >
-
-                <div className='formation-text'>
-                <h1>{formation_text[1]['FR'].title}</h1>
-
-
-                  <p>{formation_text[1]['FR'].text}
-
-
-
-                  </p>
-
-                </div>
-              </motion.div>
-            </AnimatePresence>
-
-            <AnimatePresence key={formation_text[2]['FR'].text}>
-              <motion.div
-                className='formation'
-                key={formation_text[2]['FR']}
-                variants={mession_itemVariants}
-
-                viewport={{ once: true }}
-                initial='hidden'
-                whileInView='visible'
-              >
-
-                <div className='formation-text'>
-
-                <h1>{formation_text[2]['FR'].title}</h1>
-                  <p>{formation_text[2]['FR'].text}
-
-
-                  </p>
-
-                </div>
-              </motion.div>
-            </AnimatePresence>
-
-          </div>
-          <button onClick={() => null} > {button_presentation[0]['FR']}
-          </button>
-        </div>
-
-        <div className='prof-part'>
-          <div className='prof-part1'>
-            <div className='prof' style={{
-              backgroundImage: `url(${images_presentation[0].prof_img1})`
-            }}>
-
-
-            </div>
-
-            <div className="prof_svg">
-
-            <h1>{formation_prof[0]['FR'].title}</h1>
-                  <p>{formation_prof[0]['FR'].text}
-
-
-                  </p>
-
-            </div>
-          </div>
-          <div className='prof-part1'>
-
-            <div className="prof_svg">
-
-            <h1>{formation_prof[1]['FR'].title}</h1>
-                  <p>{formation_prof[1]['FR'].text}
-
-
-                  </p>
-
-            </div>
-            <div className='prof'
-              style={{ backgroundImage: `url(${images_presentation[0].prof_img2})` }} key={0}>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
+  
+  
 
 
 
