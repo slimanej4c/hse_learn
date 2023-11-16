@@ -1,4 +1,4 @@
-
+const SET_CURRENT_IMAGE= 'SET_CURRENT_IMAGE'
 import {
 
     LOGIN_REQUEST,
@@ -241,7 +241,19 @@ export const StoreFailure = (error) => {
   }
 } 
 
+export const Set_current_image_redux= (val) => async dispatch => {
+  console.log(  'change_curent img....')
+ 
+  dispatch(SetCurrentImageRequest(val))
+ 
+ } 
+ export const SetCurrentImageRequest = (val) => {
+  return {
+    type: SET_CURRENT_IMAGE ,
+    set_current_image:val,
 
+  }
+}
     const initialState = {
    
         username_login: '',
@@ -252,6 +264,7 @@ export const StoreFailure = (error) => {
       password_register: '',
       re_password_register: '',
        show_navbar:false,
+       current_image:0,
         //is_LOGIN:' yesss',
         //is_LOGIN:localStorage.getItem('is_LOGIN'),
         //is_LOGIN:localStorage.getItem('is_LOGIN') || false,

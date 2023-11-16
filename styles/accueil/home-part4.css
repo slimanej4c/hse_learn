@@ -16,160 +16,89 @@
 
    width: 100%;
 }
-.home-part4-title h1{
-  font-size: 45px;
-  text-align: center;
-  font-family:inika_bold;
-}
-.home-figure{
-  position: relative;
-  display: flex;
 
 
-  width: 80%;
-  height: 600px;
-  
-  justify-content: center;
- align-items: center;
- overflow: hidden;
- border-radius: 20px;
 
-
-}
-.home-figure-index{
+.home-section1 button {
   position: absolute;
-  bottom: 0;
-
-  width: 50%;
-  height: 10%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin-top: 200px;
+  z-index: 60;
 }
-.home-figure-index-div{
-  display: flex;
-  flex-direction: row;
-  width: 15px;
-    height: 15px;
-    background-color: #d4b800;
-    border-radius: 20px;
-    margin: 5px;
-}
-figure.snip1390 {
-  font-family:inika_reg;
-  position: absolute;
-  overflow: hidden;
-  margin: 5%;
-  min-width: 80%;
-  max-width: 90%;
-  width: 100%;
-  color: #000000;
-  height: 90%;
-  text-align: center;
-  font-size: 25px;
-  background-color: var(--figure_snip_bg_color);
-  padding: 10px;
-  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 15px;
-  box-shadow: 2px 6px 8px 0px rgb(22, 31, 13);
-
-}
-figure.snip1390 *,
-figure.snip1390 *:before,
-figure.snip1390 *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-figure.snip1390 figcaption {
-  width: 100%;
-}
-figure.snip1390 h2,
-figure.snip1390 h4,
-figure.snip1390 blockquote {
-  margin: 0;
-
-}
-figure.snip1390 h2,
-figure.snip1390 h4 {
-  font-weight: 300;
-}
-figure.snip1390 h2 {
-  color: #ffffff;
-}
-figure.snip1390 h4 {
-  color: #3e3e3e;
-}
-figure.snip1390 blockquote {
-  font-size: 1em;
-  padding: 45px 10px 40px 50px;
-  margin-top: 10px;
-  background-color: var(--figure_blockquote_bg_color);
-  border-radius: 5px;
-  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
-  text-align: left;
-  position: relative;
-  height: 300px;
-  
-}
-figure.snip1390 blockquote:before {
-  font-family: 'FontAwesome';
-  content: "\201C";
-  position: absolute;
-  font-size: 40px;
-  opacity: 0.25;
-  font-style: normal;
-  top: 0px;
-  left: 20px;
-}
-figure.snip1390 .profile {
-  width:60px;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
-  margin-bottom: 10px;
-  border: solid 5px #A6A57A;
-}
-.home-part4-buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width:100%;
-  height: 100px;
-  border: #d4b800;
- 
- 
-}
-.home-part4-button {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-
-  border-radius: 50px;
-  border: none;
-  bottom:0%;
-  box-shadow: 2px 2px 4px 0px rgb(57, 118, 0);
-}
-.home-part4-buttons .prev {
-
-  background-color: var(--button_event_color);
-  color: wheat;
-  font-size: 2em;
+.home-slider1{
+position: relative;
+  position:absolute;
+ display: flex;
 
 
-}
-.home-part4-buttons .next {
 
-  background-color: var(--button_event_color);
-  color: wheat;
-  font-size: 2em;
  
 
 }
+
+.home-slider1 .inside{
+
+display: flex;
+
+ width: 10px;
+  height: 200px;
+
+
+}
+.slider1-items {
+  position: absolute;
+  display: flex;
+ 
+
+
+
+}
+
+.slider1-item {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 15px 0px black;
+  border-radius: 5%;
+
+}
+.slider1-item3 {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 15px 0px black;
+  border-radius: 5%;
+
+}
+.slider1-item:nth-child(1) {
+  left: 0; /* Définir la position du premier élément */
+}
+
+.slider1-item:nth-child(2) {
+  left: 155px; /* Définir la position du deuxième élément */
+}
+
+.slider1-item:nth-child(3) {
+  left: 310px; /* Définir la position du troisième élément */
+}
+.slider1-item:nth-child(4) {
+  left: 465px; /* Définir la position du troisième élément */
+}
+.slider1-item:nth-child(5) {
+  left: 620px; /* Définir la position du troisième élément */
+}
+.slider1-item:nth-child(6) {
+  left: 775px; /* Définir la position du troisième élément */
+}
+
+
 @media screen and (max-width:750px) {
   .home-part4{
 

@@ -1,4 +1,4 @@
-
+"use client";
 
 import { connect } from 'react-redux'
 import Link from 'next/link'
