@@ -6,6 +6,7 @@ import '../styles/footer.css'
 import './globals.css'
 import '../styles/accueil/home-part1.css'
 import '../styles/accueil/home-part2.css'
+import '../styles/accueil/home-part4.css'
 import { Provide_redux } from "../Redux/provider";
 import Navbar from '../components/navbar'
 import Footer from '../components/Footer'

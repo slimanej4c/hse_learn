@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Accueil_part1 from "./accueil/Accueil_part1"
 import Accueil_part2 from "./accueil/Accueil_part2"
+import Accueil_part4 from "./accueil/Accueil_part4"
 import { formation_text, formation_title, formation_image ,formation_prof} from './accueil/formation'
 import { images_presentation, titles_presentation, aprops_presentation, button_presentation } from "./accueil/presentation"
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
   <Accueil_part2/>
   </section>
   <section className='section2' >
-   
+  <Accueil_part4/>
 
    </section>
   </div>
