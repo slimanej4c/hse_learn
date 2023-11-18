@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 
 import { Logout_redux } from '../Redux';
 import { Login_store} from '../Redux';
-const navbar = (props) =>{
+const Navbar = (props) =>{
     
 const[show_nav,setshow_nav]=useState(false)
 const [open, setOpen] = useState(false);
@@ -305,4 +305,4 @@ const mapDispatchToProps = dispatch => {
 export default  connect(
   mapStateToProps ,mapDispatchToProps
  
-)( navbar) 
+)( Navbar) 
