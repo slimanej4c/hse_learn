@@ -1,45 +1,52 @@
 
 export const temoignage_text = [
-        {FR:[ {
-           id:1,
-           imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg",
-           imgAlt: "profile-sample1",
-           name: "Eleanor Crisp",
-           role: "bénévole",
-           quote: "Je suis fier de faire partie de Solidarité, une association qui s'engage à améliorer la vie des enfants en difficulté à travers l'accès à l'éducation, la santé, l'eau potable et l'aide alimentaire. En travaillant en collaboration avec des partenaires locaux, nous avons réussi à faire une réelle différence dans la vie des enfants les plus vulnérables de la société"
-         },
-         {
-           id:2,
-           imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg",
-           imgAlt: "profile-sample2",
-           name: "Gordon Norman",
-           role: "bénéficiaire",
-           quote: "Grâce à l'aide de Solidarité, mes enfants ont maintenant accès à une alimentation saine et équilibrée, ainsi qu'à l'éducation. Je suis vraiment reconnaissant pour tout ce que l'association a fait pour nous."
-         },
-         {
-           id:3,
-           imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg",
-           imgAlt: "profile-sample3",
-           name: "Sue Shei",
-           role: "bénévole",
-           quote: "Travailler en tant que bénévole pour Solidarité a été une expérience extrêmement gratifiante. Pouvoir contribuer à améliorer la vie des enfants défavorisés en leur offrant des opportunités d'éducation, de santé et d'aide alimentaire est une source de fierté et de satisfaction pour moi."
-         },
-         {
-           id:4,
-           imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg",
-           imgAlt: "profile-sample4",
-           name: "Eleanor Crisp",
-           role: "bénévole",
-           quote: "En tant que bénévole pour Solidarité, j'ai pu découvrir l'impact positif que peut avoir une association à but non lucratif. En travaillant avec passion et dévouement pour aider les enfants en difficulté, j'ai non seulement aidé à changer leur vie, mais j'ai également enrichi la mienne."
-         },
-         {
-           id:5,
-           imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg",
-           imgAlt: "profile-sample5",
-           name: "Gordon Norman",
-           role: "bénéficiaire",
-           quote: "La collaboration de Solidarité avec les partenaires locaux est remarquable. Ils travaillent ensemble pour fournir de l'eau potable propre et des soins de santé aux enfants dans le besoin. Grâce à leur travail acharné, nous avons vu une amélioration significative de la qualité de vie de nos enfants."
-         }],
+        {FR: [
+          {
+            id: 1,
+            color: 'white',
+            imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg",
+            imgAlt: "profile-sample1",
+            name: "Eleanor Crisp",
+            role: "étudiant",
+            quote: "Fier d'être étudiant de Solidarité. Des formations de qualité qui ont changé ma perspective et m'ont préparé pour l'avenir."
+          },
+          {
+            id: 2,
+            color: 'white',
+            imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample7.jpg",
+            imgAlt: "profile-sample2",
+            name: "Gordon Norman",
+            role: "étudiant",
+            quote: "Les formations de Solidarité m'ont donné les compétences nécessaires pour réussir. Reconnaissant pour cette opportunité éducative."
+          },
+          {
+            id: 3,
+            color: 'white',
+            imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg",
+            imgAlt: "profile-sample3",
+            name: "Sue Shei",
+            role: "étudiant",
+            quote: "En tant qu'étudiant, je trouve que les formations de Solidarité sont un investissement précieux dans mon avenir. Des enseignants dévoués et des opportunités exceptionnelles."
+          },
+          {
+            id: 4,
+            color: 'white',
+            imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg",
+            imgAlt: "profile-sample4",
+            name: "Eleanor Crisp",
+            role: "étudiant",
+            quote: "Solidarité offre des formations qui vont au-delà de l'enseignement académique. Un environnement d'apprentissage stimulant et enrichissant."
+          },
+          {
+            id: 5,
+            color: 'white',
+            imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg",
+            imgAlt: "profile-sample5",
+            name: "Gordon Norman",
+            role: "étudiant",
+            quote: "Les formations de Solidarité sont conçues pour répondre aux besoins des étudiants d'aujourd'hui. Des enseignants inspirants et des programmes pertinents."
+          }
+        ],
        ENG: [
          {
            id: 1,

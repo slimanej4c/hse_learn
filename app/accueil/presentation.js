@@ -25,3 +25,5 @@ export const aprops_presentation=[{"FR":{"title":"À propos","text":" Soladirit�
   "DE":{"title":"Über uns","text":"Soladirité ist eine gemeinnützige Organisation, die daran arbeitet, das Leben benachteiligter Kinder zu verbessern. Unser Ziel ist es, Kindern durch verschiedene Programme wie Lebensmittelhilfe, Zugang zu sauberem Wasser, Bildung und Gesundheit zu helfen. Wir arbeiten mit lokalen Partnern zusammen, um sicherzustellen, dass unsere Projekte eine positive und nachhaltige Wirkung auf die von uns unterstützten Gemeinden haben. Wir glauben, dass jedes Kind eine Chance verdient, erfolgreich zu sein, und wir sind entschlossen, unseren Beitrag dazu zu leisten. Schließen Sie sich unserer Mission an, einen Unterschied im Leben von Kindern auf der ganzen Welt zu machen."}}]
 
 export const button_presentation = [  {FR: "Rejoignez-nous", ENG: "Join us", DE: "Treten Sie uns bei"}];
+export const button_formation = [  {FR: "Voir toutes les formations", ENG: "Join us", DE: "Treten Sie uns bei"}];
+

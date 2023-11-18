@@ -13,9 +13,9 @@
   --aprops-color:#1e1e1e ;
 
  
-  --mession-color:#e4e6d600;
-  --mession-font-color:#091102 ;
-  --mession-font-title-color:rgb(61, 59, 0); ;
+  --formation-title-color:#091102;
+  --formation-text-color:#091102 ;
+  --formation-bg:rgb(255, 255, 255); 
   --mession-font-big-title-color:rgb(16, 16, 13);
  
   --event-font-big-title-color:#20221c;
@@ -39,4 +39,18 @@
   --footer_font_size_title_400:14px ;
   --footer_font_size_text_400:12px ;
   --footer_font_size_textp_400:11px ;
+
+  --height_home:3600px ;
+  --presentation-img:20%;
+  --height_formation_part:30%;
+  --height_prof_part:30%;
+  --height_prof_sous_part1:30%;
+  --height_prof_sous_part2:30%;
+  --top_part1:30%;
+  --top_formation_part:22%;
+  --top_prof_part:30%;
+  --height_title:20%;
+
+  --font_presentation-title_h_mobile:3.5rem;
+  --font_presentation-title_p_mobile:3rem;
  }

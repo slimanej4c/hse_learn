@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { connect } from 'react-redux'
 import { motion, AnimatePresence } from "framer-motion"
 import { formation_text, formation_title, formation_image ,formation_prof} from './formation'
-import { images_presentation, titles_presentation, aprops_presentation, button_presentation } from "./presentation"
+import { images_presentation, titles_presentation, aprops_presentation, button_presentation, button_formation } from "./presentation"
 
 export const Accueil_part2 = () => {
 
@@ -51,6 +51,8 @@ export const Accueil_part2 = () => {
               </p>
 
             </div>
+            <button onClick={() => null} > {button_formation[0]['FR']}
+      </button>
 
           </motion.div>
         </AnimatePresence>
@@ -77,6 +79,8 @@ export const Accueil_part2 = () => {
               </p>
 
             </div>
+            <button onClick={() => null} > {button_formation[0]['FR']}
+      </button>
           </motion.div>
         </AnimatePresence>
 
@@ -100,12 +104,13 @@ export const Accueil_part2 = () => {
               </p>
 
             </div>
+            <button onClick={() => null} > {button_formation[0]['FR']}
+      </button>
           </motion.div>
         </AnimatePresence>
 
       </div>
-      <button onClick={() => null} > {button_presentation[0]['FR']}
-      </button>
+   
     </div>
 
     <div className='prof-part'>

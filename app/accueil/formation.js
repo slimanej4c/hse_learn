@@ -1,25 +1,43 @@
 
 export const formation_text = [
-    {
-      FR:{"id":1, title:'Prévention Incendie',text:"Stratégies proactives, intervention urgente, équipement avancé : formation complète sécurité incendie"},
-      
-      ENG:{"id":1,title:'formation1',text:"Notre mission est d'améliorer la vie des enfants en difficulté en fournissant une aide alimentaire, un accès à l'eau potable, une éducation et des soins de santé de qualité."},
-      
+  {
+    FR: {
+      id: 1,
+      title: 'Formation en Hygiène et Sécurité',
+      text: "Stratégies proactives, intervention urgente, équipement avancé : formation complète en hygiène et sécurité."
     },
-    {
-      FR:{"id":2, title:'formation2',text:"Notre1 mission est d'améliorer la vie des enfants en difficulté en fournissant une aide alimentaire, un accès à l'eau potable, une éducation et des soins de santé de qualité."},
-      
-      ENG:{"id":2, title:'formation2',text:"Notre mission est d'améliorer la vie des enfants en difficulté en fournissant une aide alimentaire, un accès à l'eau potable, une éducation et des soins de santé de qualité."},
-      
+    ENG: {
+      id: 1,
+      title: 'Safety and Hygiene Training',
+      text: "Proactive strategies, emergency response, advanced equipment: comprehensive safety and hygiene training."
     },
-    {
-      FR:{"id":3, title:'formation3',text:"Notre2 mission est d'améliorer la vie des enfants en difficulté en fournissant une aide alimentaire, un accès à l'eau potable, une éducation et des soins de santé de qualité."},
-      
-      ENG:{"id":3,title:'formation3',text:"Notre mission est d'améliorer la vie des enfants en difficulté en fournissant une aide alimentaire, un accès à l'eau potable, une éducation et des soins de santé de qualité."},
-      
+  },
+  {
+    FR: {
+      id: 2,
+      title: 'Formation en Environnement',
+      text: "Formations visant à renforcer les compétences dans le domaine de l'environnement pour une meilleure compréhension et gestion des problématiques environnementales."
     },
-    
-  ];
+    ENG: {
+      id: 2,
+      title: 'Environmental Training',
+      text: "Training aimed at enhancing skills in the field of the environment for a better understanding and management of environmental issues."
+    },
+  },
+  {
+    FR: {
+      id: 3,
+      title: 'Formations sur Mesure en HSE',
+      text: "Des formations personnalisées en Hygiène, Sécurité et Environnement (HSE) pour renforcer les compétences nécessaires à la formation professionnelle."
+    },
+    ENG: {
+      id: 3,
+      title: 'Customized HSE Training',
+      text: "Customized Health, Safety, and Environment (HSE) training to enhance the skills needed for professional development."
+    },
+  },
+];
+
   export const formation_title = [
     {
       "FR": "Nos Formations",

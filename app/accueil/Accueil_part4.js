@@ -2,10 +2,9 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import { connect } from 'react-redux'
-import { motion, AnimatePresence , useMotionValue, useDragControls} from "framer-motion"
-import {temoignage_text  ,section_title} from "./temoignage"
+import {temoignage_text  ,} from "./temoignage"
 import {Set_current_image_redux } from '../../Redux'
-
+import { motion, useAnimation, useMediaQuery ,AnimatePresence} from "framer-motion";
 export const Accueil_part4 = (props) => {
 
   const [currentFigure, setcurrentFigure] = useState(0);
@@ -19,7 +18,36 @@ export const Accueil_part4 = (props) => {
   const [y_init_figure, sety_init_figure] = useState('100%');
 
   const [numberList, setNumberList] = useState([0, 1, 2, 3, 4]);
+  const controls = useAnimation();
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 750);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      controls.start({
+        opacity: 0,
+        x:"100%",
+        transition: {
+          duration: 1,
+        },
+      },);
+    } else {
+      controls.start({
+       
+      },);
+    }
+  }, [isMobile, controls]);
   const moveListForward = () => {
     setanime(false)
     setindex(index+1)
@@ -41,9 +69,6 @@ export const Accueil_part4 = (props) => {
     }, 4000);
     return () => clearInterval(interval);
   }, [index]);
-  const temoignage_text=[{'FR':[{id:0,color:'white',image:'/static/images/leger.png'},{id:1,color:'green',image:'/static/images/isoler.jpg'},
-  {id:2,color:'red',image:'/static/images/protection.png'},{id:3,color:'yellow',image:'/static/images/eco.png'},
-  {id:4,color:'green',image:'/static/images/isoler_sons.png'}]}]
 
   useEffect(() => {
   console.log(y_exit_figure)
@@ -76,30 +101,10 @@ export const Accueil_part4 = (props) => {
   
 }
 
-const image_figuretVariantsr = {
-  initial: {
-    opacity: 0,
-    x:"-100%",
-  },
-  animate: {
-    opacity: 1,
-    x: '0%',
-    transition: {
-      duration: 1,
-    },
-  },
-  exit: {
-    opacity: 0,
-    x:"100%",
-    transition: {
-      duration: 1,
-    },
-  },
-  
-};
+
 const image_figuretVariantsl = {
   initial: {
-    opacity: 1,
+    opacity: 0,
     x:"100%",
   },
   animate: {
@@ -114,54 +119,11 @@ const image_figuretVariantsl = {
     opacity: 0,
     x:"-100%",
     transition: {
-      duration:0.5,
+      duration:1,
     },
   },
 };
-const image_big = {
-  initial: {
-    opacity: 1,
-    width:150,
-    height:200,
-    bottom:"20%",
-    left:'50%',
-  },
-  animate: {
-    opacity: 1,
-    width:"100%",
-    height:800,
-    bottom:"0%",
-    left:'0%',
-    
-    transition: {
-      duration: 0.9,
-    },
-  },
 
-  exit: {
-    opacity: 0,
-    x:"-100%",
-    transition: {
-      duration:0.5,
-    },
-  },
-};
-const image_big_init= {
-  initial: {
-    opacity: 1,
-    width:150,
-    height:200,
-    bottom:"20%",
-    left:'50%',
-  },
-  animate: {
-  
-  },
-
-  exit: {
-  
-  },
-};
   
   
     // useEffect(() => {
@@ -185,9 +147,10 @@ const image_big_init= {
   return (
     <section className='home-part4'>
        
-        <div className='home-slider1' style={{bottom:'20%',left:'50%'}}>
-        
+        <div className='home-slider1' style={{}}>
+        <h1>Avis</h1>
             <div className='inside'>
+             
                             
                           <div className='slider1-items'>
                         
@@ -197,18 +160,36 @@ const image_big_init= {
                                 return(
                                   <AnimatePresence >
                             
-                                  <motion.div className='slider1-item' style={{backgroundColor:temoignage_text[0]['FR'][0+numberList[items.id]].color ,backgroundImage:`url(${temoignage_text[0]['FR'][0+numberList[items.id]].image})`}}
+                                  <motion.div className='slider1-item' style={{backgroundColor:"white" }}
                                   variants={anime2 &&  image_figuretVariantsl}
                                   initial="initial"
                                   animate="animate"
-                            
+                                  exit={isMobile && "exit"}
+                                  
                                   key={items.id+index}
                                   onAnimationComplete={definition => {
                                     console.log('Completed animating', definition)
                                     setanime(true)
                                   }}>
-                                 
-                                          <h1>{temoignage_text[0]['FR'][0+numberList[items.id]].id}</h1>
+                                    <div className='slider2-item'>
+
+                                   
+                                  <img src={temoignage_text[0]["FR"][0+numberList[items.id-1]].imgSrc} alt={temoignage_text[0]["FR"][0+numberList[items.id-1]].imgAlt} className="profile" />
+                                    <div className='slider1_text'>
+                                     <div className='slider2_text'>
+
+                                  
+                                      <h2>{temoignage_text[0]["FR"][0+numberList[items.id-1]].name}</h2>
+                                      <h4>{temoignage_text[0]["FR"][0+numberList[items.id-1]].role}</h4>
+                                      <p>{temoignage_text[0]["FR"][0+numberList[items.id-1]].quote}</p>
+                                      </div>
+                                      </div>
+                                   <div className='slider_star'>
+                                    <span role="img" aria-label="star">
+                                      ⭐⭐⭐⭐⭐
+                                    </span>
+                                    </div>
+                                    </div>
                                   </motion.div>
                                   </AnimatePresence>
                                 

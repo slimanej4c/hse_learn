@@ -10,12 +10,13 @@ export default function Home() {
     <section className='section1'>
     <section className='home-part1'>
     <Accueil_part1/>
-          
-    <div
-        className="presentation-img-fixed"
-        style={{ backgroundImage: `url(${images_presentation[0].image_fixed})` }}
+          <div   className="presentation-img-fixed"
+        style={{ backgroundImage: `url(${images_presentation[0].image_fixed})` }}>
+          <div className='presentation-img-fixed-div'>
 
-      />
+          </div>
+
+          </div>
 
 
       <div

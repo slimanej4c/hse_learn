@@ -375,15 +375,18 @@
  
       flex-direction: column;
   position: absolute;
-  padding-right: 10%;
+ 
   top: 0%;
   text-align: center;
   width: 100%;
   height: 60%;
-  
+ 
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
       
     }
     .nav-ul li{
@@ -395,14 +398,38 @@
   
     }
     .nav-link{
+      margin-left: -30%;
+      width: 100%;
+     
     font-size: 12px;
   
+    }
+    .div-btn {
+      display: flex; /* Utilisez la flexbox pour aligner les boutons avec les liens */
+      width: 100%;
+    
+      justify-content: center;
+      align-items: center;
+      margin-right: 11%; 
+    }
+    
+    .div-btn button {
+     
+      margin-top: 20%;
+      font-size: 13px;
+    
+    }
+    .div-btn-line{
+    
+      height: 0px;
+      width: 0px;
+     
     }
     .item-div{
       display: flex;
       margin-top: 40px;
       display: inline-block;
-  font-family:inika_bold;
+  
 
   text-align: center;
   justify-content: center;
@@ -413,7 +440,7 @@
     }
     .nav-link{
       display: inline-block;
-      font-family:inika_bold;
+     
       color: rgb(27, 22, 2);
       text-align: center;
       
