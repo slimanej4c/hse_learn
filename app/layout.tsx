@@ -10,6 +10,7 @@ import '../styles/accueil/home-part4.css'
 import { Provide_redux } from "../Redux/provider";
 import Navbar from '../components/navbar'
 import Footer from '../components/Footer'
+import Login from '../components/Login'
 
 export default function RootLayout({
   children,
@@ -32,6 +33,7 @@ export default function RootLayout({
        
         <div className='layout-header'>
           <div className="layout-container">
+            <Login/>
         {children}
         </div>
         

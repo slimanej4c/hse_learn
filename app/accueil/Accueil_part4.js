@@ -19,9 +19,10 @@ export const Accueil_part4 = (props) => {
 
   const [numberList, setNumberList] = useState([0, 1, 2, 3, 4]);
   const controls = useAnimation();
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    setIsMobile(window.innerWidth <= 750);
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 750);
     };
