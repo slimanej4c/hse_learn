@@ -1,7 +1,7 @@
 'use client';
 import React ,{  useState } from 'react'
 import { connect } from 'react-redux'
-import { Login_redux } from '../../Redux';
+import { Login_redux } from '../Redux';
 
 export const Login = (props) => {
     const [username, setUsername] = useState('');

@@ -3,12 +3,13 @@
 import { connect } from 'react-redux'
 import Link from 'next/link'
 import Image from 'next/image';
+import { config } from '@fortawesome/fontawesome-svg-core'
 import {faLocationDot ,faPhone ,faMobilePhone ,faEnvelope ,faBank ,faMoneyBill
 
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-
+config.autoAddCss = false
 
 const Footer = (props) => {
 const aprops_footer={"FR":"Soladirité est une association à but non lucratif qui travaille pour améliorer la vie des enfants en difficulté en leur fournissant de l'aide alimentaire, l'accès à l'eau potable, l'éducation et la santé,en collaboration avec des partenaires locaux.",
