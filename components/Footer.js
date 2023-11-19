@@ -3,13 +3,7 @@
 import { connect } from 'react-redux'
 import Link from 'next/link'
 import Image from 'next/image';
-import { config } from '@fortawesome/fontawesome-svg-core'
-import {faLocationDot ,faPhone ,faMobilePhone ,faEnvelope ,faBank ,faMoneyBill
 
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-config.autoAddCss = false
 
 const Footer = (props) => {
 const aprops_footer={"FR":"Soladirité est une association à but non lucratif qui travaille pour améliorer la vie des enfants en difficulté en leur fournissant de l'aide alimentaire, l'accès à l'eau potable, l'éducation et la santé,en collaboration avec des partenaires locaux.",
@@ -100,10 +94,10 @@ const clicked =(to_link)=>{
         <div className="footer-coordone">
               <h1>{info["Contact"]["FR"]}</h1>
                 <ul>
-                  <li><FontAwesomeIcon icon={faLocationDot}  className="footer-icon"/>xxxxx 5, xxxxx Boniswil (SUISSE)</li>
-                  <li> <FontAwesomeIcon icon={faPhone}  className="footer-icon"/>+xx xx xxx xx xx </li>
-                  <li><FontAwesomeIcon icon={faMobilePhone}  className="footer-icon"/>+xx xx xxx xx xx </li>
-                  <li><FontAwesomeIcon icon={faEnvelope}  className="footer-icon"/>solidarite@domaine.com</li>
+                  <li>xxxxx 5, xxxxx Boniswil (SUISSE)</li>
+                  <li> +xx xx xxx xx xx </li>
+                  <li>+xx xx xxx xx xx </li>
+                  <li>solidarite@domaine.com</li>
                 </ul>
                
               </div>
