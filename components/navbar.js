@@ -117,7 +117,7 @@ const link_array_logout = [
     {
       FR: [
         { id: 1, title: 'Acceuil', to: '/' },
-        { id: 2, title: 'Formations', to: '/formations' },
+        { id: 2, title: 'Formations', to: '/formation' },
         { id: 3, title: 'Service', to: '/service' },
         { id: 4, title: 'Contact', to: '/contact' },
         { id: 5, title: 'Login', to: '/login' },
@@ -137,7 +137,7 @@ const link_array_logout = [
     {
       FR: [
         { id: 1, title: 'Acceuil', to: '/' },
-        { id: 2, title: 'Formations', to: '/formations' },
+        { id: 2, title: 'Formations', to: '/formation' },
         { id: 3, title: 'Service', to: '/service' },
         { id: 4, title: 'Contact', to: '/contact' },
         { id: 5, title: 'Logout', to: '/logout' },
