@@ -4,7 +4,9 @@ import React, { useState,useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import { connect } from 'react-redux';
-
+import Login from '../components/Login'
+import { Show_Login_form_redux } from '../Redux';
+import { Show_register_form_redux } from '../Redux';
 import { Logout_redux } from '../Redux';
 import { Login_store} from '../Redux';
 const Navbar = (props) =>{
@@ -34,61 +36,18 @@ props.Login_store()
 useEffect(() => {
  
 }, [props.is_login]);
+useEffect(() => {
+ 
+}, [props.show_login_form]);
+useEffect(() => {
+ 
+}, [props.show_register_form]);
 const logout=() => {
   console.log('logout...')
   props.Logout_redux()
 }
-const navbarVariants = {
-  hidden: { y: "0%" },
-  visible: {
-    y: 0,
-    transition: {
-     
-      duration: 0.75,
-      type: "spring",
-      stiffness: 100,
-      mass: 0.5,
-      damping: 10,
-      staggerChildren: 0.1,
-      delayChildren: 0.5,
-    },
-  },
-};
 
-const itemVariants = {
-  hidden: { y: "0%", opacity: 1 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-     
-      duration: 0.75,
-      type: "spring",
-      stiffness: 100,
-      mass: 0.5,
-      damping: 10,
-      staggerChildren: 0.1,
-      delayChildren: 0.5,
-    },
-  },
-};
-const modelVariants = {
-  hidden: { x: "-100%", opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: {
-     
-      duration: 2,
-      type: "spring",
-      stiffness: 50,
-      mass: 1,
-      damping: 10,
-      staggerChildren: 0.1,
-      delayChildren: 0.5,
-    },
-  },
-};
+
 const clicked_mobile =()=>{
   
     {setOpen(!open)}
@@ -153,10 +112,14 @@ const link_array_logout = [
      
     }
   ];
+ 
   const menu=(link_array)=>{
     const contact_div="item-div contact"
     const other_div="item-div"
-    
+    const Show_form=()=>{
+      console.log('show form ')
+      props.Show_Login_form_redux()
+    }
    return(
 
     <ul className="nav-ul">
@@ -185,7 +148,7 @@ const link_array_logout = [
                                <div className="div-btn-line" key={item.id} >
                                 
                                 </div>
-                             <button onClick={()=>logout()}>S'identifier</button>
+                             <button onClick={()=>Show_form()}>S'identifier</button>
                        
                               </div>
                             
@@ -217,7 +180,8 @@ const link_array_logout = [
    
     return(
       <nav className={show_nav ? nav_opened :nav_closed}>
-     
+      
+   
      
      {  props.is_login ?  menu(link_array_login) :  menu(link_array_logout)}
       
@@ -281,7 +245,8 @@ const mapStateToProps = state => {
     
     is_login:state.authreducer.is_login,
     show_navbar:state.authreducer.show_navbar,
-   
+    show_login_form:state.authreducer.show_login_form,
+    show_register_form:state.authreducer.show_register_form,
 
 
   
@@ -296,6 +261,9 @@ const mapDispatchToProps = dispatch => {
    
     Logout_redux:()=>dispatch(Logout_redux()),
     Login_store:()=>dispatch( Login_store()),
+    Show_Login_form_redux:()=>dispatch(Show_Login_form_redux()),
+    
+   
   
   }
 }

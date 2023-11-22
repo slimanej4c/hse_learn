@@ -4,7 +4,8 @@ import { connect } from 'react-redux'
 import Link from 'next/link'
 import Image from 'next/image';
 
-
+import Login from '../components/Login'
+import Register from '../components/Register'
 const Footer = (props) => {
 const aprops_footer={"FR":"Soladirité est une association à but non lucratif qui travaille pour améliorer la vie des enfants en difficulté en leur fournissant de l'aide alimentaire, l'accès à l'eau potable, l'éducation et la santé,en collaboration avec des partenaires locaux.",
 "ENG": "Soladirité is a non-profit organization that works to improve the lives of children in need by providing them with food aid, access to clean water, education, and health care in collaboration with local partners.",
@@ -62,6 +63,8 @@ const clicked =(to_link)=>{
   return (
     
     <footer className="footer">
+      {props.show_register_form &&    <Register/>}
+      {props.show_login_form &&    <Login/>}
     <div className="footer-top">
       <div className='footer-top-1'>
         <div className='footer-description'>
@@ -130,7 +133,8 @@ const clicked =(to_link)=>{
 
   const mapStateToProps = (state) => ({
  
-  
+    show_login_form:state.authreducer.show_login_form,
+    show_register_form:state.authreducer.show_register_form,
   
   })
   

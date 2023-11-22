@@ -2,7 +2,7 @@
 import React ,{  useState } from 'react'
 import { connect } from 'react-redux'
 import { Login_redux } from '../../Redux';
-
+import Image from 'next/image';
 export const login = (props) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -16,7 +16,10 @@ export const login = (props) => {
     };
   
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='login-form'>
+        <div className="login-logo" >
+       <Image src={"/logo.png"} alt="logo_m" width={130} height={50} />
+        </div>
         <div>
           <label htmlFor="username">Nom d'utilisateur:</label>
           <input
@@ -36,6 +39,14 @@ export const login = (props) => {
           />
         </div>
         <button type="submit">Se connecter</button>
+        <div>
+        <p>
+        Vous n'avez pas de compte ?{' '}
+        <a href="#" onClick={null}>
+          Créer un compte
+        </a>
+      </p>
+      </div>
       </form>
     );
 }

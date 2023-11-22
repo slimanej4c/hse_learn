@@ -1,4 +1,6 @@
 const SET_CURRENT_IMAGE= 'SET_CURRENT_IMAGE'
+const SET_REGISTER_FORM= 'SET_REGISTER_FORM'
+const SET_LOGIN_FORM= 'SET_LOGIN_FORM'
 import {
 
     LOGIN_REQUEST,
@@ -254,12 +256,41 @@ export const Set_current_image_redux= (val) => async dispatch => {
 
   }
 }
+
+export const Show_Login_form_redux = () =>   dispatch => {
+  
+     console.log('show login redux form ..')
+    dispatch(Showformrequest())
+    
+ 
+}
+export const Showformrequest = () => {
+  return {
+    type:   SET_LOGIN_FORM ,
+  
+  }
+}  
+export const Show_register_form_redux = () =>   dispatch => {
+  
+  console.log('show register form ..')
+ dispatch(Showformregisterrequest())
+ 
+
+}
+export const Showformregisterrequest = () => {
+return {
+ type:   SET_REGISTER_FORM ,
+
+}
+} 
     const initialState = {
-   
+        show_login_form:false,
+        show_register_form:false,
         username_login: '',
         password_login: '',
         is_login:false,
         error_login:'',
+        show_loading_auth:false,
         username_register: '',
       password_register: '',
       re_password_register: '',
@@ -278,6 +309,8 @@ const AuthReducer = (state = initialState, action) => {
     switch (action.type) {
       case LOGIN_REQUEST: return {
         ...state,
+        show_loading_auth:true,
+        error_login:'',
        
      
       }
@@ -286,13 +319,16 @@ const AuthReducer = (state = initialState, action) => {
       
        username_login:action.setusername_login,
        password_login:action.setpassword_login,
+       show_loading_auth:false,
        is_login:true,
+       show_login_form:false,
+       error_login:'',
       
   
       }
       case LOGIN_FAILED: return {
         ...state,
-     
+      show_loading_auth:false,
        error_login:action.seterror_login
       
    
@@ -338,6 +374,16 @@ const AuthReducer = (state = initialState, action) => {
         is_login:false,
         show_navbar:true,
         ...state,
+     
+      }
+      case SET_LOGIN_FORM: return{
+        show_login_form:!state.show_login_form,
+        show_register_form:false,
+     
+      }
+      case SET_REGISTER_FORM: return{
+        show_register_form:!state.show_register_form,
+        show_login_form:false,
      
       }
       default:{

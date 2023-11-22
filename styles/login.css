@@ -2,11 +2,235 @@
 .login-form{
 
    position: fixed;
-   top:40%;
+   top:0%;
    z-index: 30;
-  
+   background-color: rgba(24, 22, 124, 0.7);
+   width: 100%;
+   height: 100%;
   }
   
+.login-sous-form{
+   display: flex;
+   
+   
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+  }
+  .sous-form{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(255, 255, 255, 1);
+   width: 25%;
+   max-width: 60%;
+   height: 60%;
+   
+   align-items: center;
+   
+   box-shadow: 5px 5px 10px  rgb(11, 0, 29);
+  }
+  .sous-form .exit{
+  
+   display: flex;
+   width: 100%;
+   height: 20%;
+   justify-content: flex-end;
+  }
+  .sous-form .exit h1{
+   font-size: 26px;
+   
+  }
+  .sous-form .exit-btn{
+ 
+   width: 30px;
+   height: 30px;
+   justify-content: center;
+   align-items: center;
+  }
+  .form-logo{
+   display: flex;
+   
+   margin: 10px;
+   
+  }
+  .form-input{
+   display: flex;
+   margin: 10px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   
+  }
+  
+ 
+  .sous-form input{
+   display: flex;
+  height: 30px;
+   border: none;
+   width: 60%;
+   justify-content: flex-start;
+   box-shadow: 0px 0px 1px 1px #aaabac;
+   padding-left: 10px;
+  }
+  .sous-form p{
+   text-align: center;
+  }
+  .sous-form button{
+   color: #fff;
+   background-color: #2b7ddb;
+   margin: 0px;
+   font-size: 14px;
+   letter-spacing: 1px;
+   width: 40%;
+   height: 30px;
+   border: none;
+   padding: 5px 5px;
+   margin-top: 10px;
+   border-radius: 5px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .exit button{
+   color: rgb(248, 4, 4);
+   background-color: rgb(111, 81, 245,0);
+   margin: 0px;
+   font-size: 18px;
+   letter-spacing: 1px;
+   width: 30px;
+   height: 30px;
+   border: none;
+   padding: 5px 5px;
+   border-radius: 5px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .form-compte{
+justify-content: center;
+align-items: center;
 
+   width: 100%;
+   margin-top: 10%;
+ font-size: 14px;
+ 
+  }
+  .form-compte p{
+   text-align: center;
+   width: 100%;
+   color: black;
+   justify-content: center;
+   align-items: center;
+   
 
+   }
+   .form-compte a{
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      color: blue;
+     
+      
+      }
+.login-laoding{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  
+   }
+.login-laoding-div{
+   display: flex;
+   margin: auto;
+   width: 100%;
+   height: 100%;
+   
+   align-items: center;
+   justify-content: center;
+   }
+ 
+ 
+   .login-laoding-cyrcle {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid transparent; /* Ajout d'une bordure transparente */
+      border-top-color: blue; /* Couleur de la bordure en haut */
+      animation: rotate 1s linear infinite, sweep 5s linear infinite; /* Ajout des animations */
+    }
+    
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes sweep {
+      0% {
+        border-top-color: blue;
+      }
+      20% {
+        border-top-color: transparent;
+      }
+      100% {
+        border-top-color: blue;
+      }
+    }
+    
+    .login-error {
+      display: flex;
+      width: 100%;
+     font-size: 14px;
+     color: red;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+    }
+    
+      
+                
+@media screen and (max-width: 1000px) {
+   .sous-form{
+      
+      width: 45%;
+   
+      height: 65%;
+     
+      padding: 5px;
+    
+     }
+     .sous-form button{
+    
+      font-size: 12px;
+      letter-spacing: 0px;
+      width: 40%;
+      height: 30px;
+     
+     }
 
+}
+@media screen and (max-width: 700px) {
+   .sous-form{
+      
+      width: 95%;
+     
+      height: 70%;
+   
+      
+    
+     }
+     .sous-form button{
+    
+      font-size: 12px;
+      letter-spacing: 0px;
+      width: 40%;
+      height: 30px;
+     
+     }
+
+}
