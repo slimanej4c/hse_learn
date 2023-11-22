@@ -56,7 +56,7 @@ const clicked_mobile =()=>{
     setnav_opened("layout-nav nav_opened")
   }
   const clicked =(to_link)=>{
-    
+    setshow_nav(!show_nav)
   
   }
   const MenuIcon = () => {
