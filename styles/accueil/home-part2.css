@@ -31,7 +31,7 @@ body {
   .formations-title h1 {
     font-size: 50px;
     color: #ffffff;
-   
+    text-align: center;
     padding: 10px;
   }
   
@@ -39,6 +39,7 @@ body {
     display: flex;
     width: 100%;
     height: 400px;
+    
     justify-content: center;
     align-items: center;
   }
@@ -49,6 +50,7 @@ body {
     align-items: center;
     overflow: hidden;
     width: 100%;
+    
   }
   
   .formation-container button {
@@ -74,14 +76,15 @@ body {
 
     background-color: var(--formation-bg);
     width: 20%;
-    height: 350px;
+    height: 300px;
     object-fit: contain;
     background-size: cover;
     background-position: center center;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px 0px rgb(57, 87, 2);
+    
+    box-shadow: 2px 2px 10px  rgb(9, 14, 0);
     transform: translateX(-00%);
-
+   
+    padding: 10px;
     border: none;
   }
   
@@ -109,16 +112,24 @@ body {
   .formation h1 {
     text-align: center;
     font-size: 25px;
-    color: var( --formation-title-color);
 
+    color: var( --formation-title-color);
+   
 
   }
   
   .formation p {
     text-align: center;
     color: var(--formation-text-color);
+    font-size: 16px;
     margin: 10px;
   }
+  .formation a {
+    text-align: center;
+    color: rgb(34, 32, 124);
+   
+  }
+  
   
 
   
@@ -179,8 +190,9 @@ body {
   }
   
   @media screen and (max-width: 1100px) {
-    .formation-title h1 {
+    .formations-title h1 {
       font-size: 50px;
+      
     }
     .formation h1 {
       text-align: center;
@@ -191,7 +203,9 @@ body {
       font-size: 12;
     }
     .formation {
-      height: 350px;
+      height: 300px;
+      width: 30%;
+      margin: 0 15px 15px 15px;
     }
   }
   
@@ -208,19 +222,20 @@ body {
       justify-content: space-around;
       z-index: 1;
     }
-    .formation-title h1 {
+    .formations-title h1 {
       font-size: 40px;
+      
     }
     .formation-container  {
      
 
-      height: 60%;
+      height: 50%;
       
     }
     .formation-container button {
      
-      width:200px;
-      height: 100px;
+      width:150px;
+      height: 50px;
       font-size: 15px;
       margin-top: 50%;
      
@@ -235,7 +250,8 @@ body {
     }
     .formation {
       width: 90%;
-      height: 370px;
+      height: 300px;
+      padding: 40px;
     
     }
     .formation h1 {
@@ -269,18 +285,18 @@ body {
   }
   
   @media screen and (max-width: 450px) {
-    .formation-title h1 {
-      font-size: 35px;
+    .formations-title h1 {
+      font-size: 30px;
     }
     .formation {
       width: 100%;
       padding: 0%;
     }
     .formation h1 {
-      font-size: 14;
+      font-size: 22px;
     }
     .formation p {
-      font-size: 11;
+      font-size: 20px;
     }
   }
   

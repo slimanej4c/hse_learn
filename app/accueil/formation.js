@@ -4,7 +4,7 @@ export const formation_text = [
     FR: {
       id: 1,
       title: 'Formation en Hygiène et Sécurité',
-      text: "Stratégies proactives, intervention urgente, équipement avancé : formation complète en hygiène et sécurité."
+      text: "Stratégies proactives, intervention urgente, équipement avancé : formation complète en hygiène et sécurité. Acquérez l'expertise nécessaire pour assurer des environnements sûrs et réactifs efficacement."
     },
     ENG: {
       id: 1,
@@ -16,7 +16,7 @@ export const formation_text = [
     FR: {
       id: 2,
       title: 'Formation en Environnement',
-      text: "Formations visant à renforcer les compétences dans le domaine de l'environnement pour une meilleure compréhension et gestion des problématiques environnementales."
+      text: "Formations personnalisées renforcent compétences environnementales, favorisant compréhension et gestion problématiques écologiques de manière proactive. Rejoignez-nous pour développer vos compétences et agir positivement sur l'environnement."
     },
     ENG: {
       id: 2,
@@ -28,7 +28,7 @@ export const formation_text = [
     FR: {
       id: 3,
       title: 'Formations sur Mesure en HSE',
-      text: "Des formations personnalisées en Hygiène, Sécurité et Environnement (HSE) pour renforcer les compétences nécessaires à la formation professionnelle."
+      text: "Des formations personnalisées en HSE renforcent les compétences pour la formation professionnelle. Personnalisez votre parcours pour une expertise complète et pratique. Rejoignez-nous dès maintenant!"
     },
     ENG: {
       id: 3,

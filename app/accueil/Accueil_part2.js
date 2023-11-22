@@ -20,7 +20,7 @@ export const Accueil_part2 = () => {
   return (
     <div className='home-part2-1'>
     <div className='formations-title'>
-      <h1>{formation_title[0]['FR']}</h1>
+      <h1>{formation_title[0]['FR']} </h1>
     </div>
 
     <div
@@ -45,14 +45,14 @@ export const Accueil_part2 = () => {
 
 
               </h1>
-              <p>{formation_text[0]['FR'].text}
+              <p>{formation_text[0]['FR'].text} 
 
-
+              <a href="formation" onClick={()=>props.Show_register_form_redux()}>
+              { button_formation[0]['FR']}
+                </a>
               </p>
-
             </div>
-            <button onClick={() => null} > {button_formation[0]['FR']}
-      </button>
+           
 
           </motion.div>
         </AnimatePresence>
@@ -73,14 +73,15 @@ export const Accueil_part2 = () => {
 
 
               <p>{formation_text[1]['FR'].text}
-
+              <a href="formation" onClick={()=>props.Show_register_form_redux()}>
+              { button_formation[0]['FR']}
+                </a>
 
 
               </p>
 
             </div>
-            <button onClick={() => null} > {button_formation[0]['FR']}
-      </button>
+           
           </motion.div>
         </AnimatePresence>
 
@@ -99,13 +100,14 @@ export const Accueil_part2 = () => {
 
             <h1>{formation_text[2]['FR'].title}</h1>
               <p>{formation_text[2]['FR'].text}
-
+              <a href="formation" onClick={()=>props.Show_register_form_redux()}>
+              { button_formation[0]['FR']}
+                </a>
 
               </p>
 
             </div>
-            <button onClick={() => null} > {button_formation[0]['FR']}
-      </button>
+           
           </motion.div>
         </AnimatePresence>
 
