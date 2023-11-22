@@ -187,7 +187,7 @@ const image_figuretVariantsl = {
                                       </div>
                                    <div className='slider_star'>
                                     <span role="img" aria-label="star">
-                                      ⭐⭐⭐⭐⭐
+                                            ⭐⭐⭐⭐⭐
                                     </span>
                                     </div>
                                     </div>
