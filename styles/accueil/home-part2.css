@@ -250,7 +250,7 @@ body {
     }
     .formation {
       width: 90%;
-      height: 300px;
+      height: 350px;
       padding: 40px;
     
     }
@@ -270,7 +270,7 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 600px;
+        height: 450px;
     
         margin-top: 30px;
       }
@@ -279,8 +279,21 @@ body {
        
       }
       .prof{
-        width: 90%;
+        width: 100%;
         flex-direction: column;
+        
+      }
+      .prof h1 {
+       
+        font-size: 20px;
+        margin: 4px;
+      }
+      
+      .prof p {
+        
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
   }
   

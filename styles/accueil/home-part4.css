@@ -20,6 +20,14 @@
   justify-content: center;
   align-items: center;
 }
+.home-slider1 h1{
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 30px;
+  color: #000000;
+  
+  
+}
 
 /* Styles pour les éléments à l'intérieur du slider */
 .inside {
@@ -100,7 +108,7 @@
   }
   .slider2_text h2{
     width: 100%;
-   font-size: 14px;
+   font-size: 20px;
    align-items: center;
    justify-content: center;
    text-align: center;

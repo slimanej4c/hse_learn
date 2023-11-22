@@ -149,7 +149,7 @@ const image_figuretVariantsl = {
     <section className='home-part4'>
        
         <div className='home-slider1' style={{}}>
-        <h1>Avis</h1>
+        <h1>AVIS</h1>
             <div className='inside'>
              
                             
