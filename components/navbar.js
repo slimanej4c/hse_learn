@@ -9,6 +9,7 @@ import { Show_Login_form_redux } from '../Redux';
 import { Show_register_form_redux } from '../Redux';
 import { Logout_redux } from '../Redux';
 import { Login_store} from '../Redux';
+
 const Navbar = (props) =>{
     
 const[show_nav,setshow_nav]=useState(false)
@@ -262,7 +263,6 @@ const mapDispatchToProps = dispatch => {
     Logout_redux:()=>dispatch(Logout_redux()),
     Login_store:()=>dispatch( Login_store()),
     Show_Login_form_redux:()=>dispatch(Show_Login_form_redux()),
-    
    
   
   }

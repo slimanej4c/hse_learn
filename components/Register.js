@@ -5,6 +5,7 @@ import Image from 'next/image'
 import {connect} from 'react-redux'
 import { Show_register_form_redux } from '../Redux';
 import { Show_Login_form_redux } from '../Redux';
+import {Register_redux} from '../Redux'
 function Register(props) {
     const [formedata,setformedata]=useState({username:'',password:'',re_password:''})
     const {username,password,re_password}=formedata
@@ -93,6 +94,8 @@ const mapStateToProps = state => {
      // ClearSectionInfo :()=>dispatch(ClearSectionInfo()),
      Show_register_form_redux:()=>dispatch(Show_register_form_redux()),
      Show_Login_form_redux:()=>dispatch(Show_Login_form_redux()),
+     Register_redux:(username,password,re_password)=>dispatch(Register_redux(username,password,re_password)),
+   
     }
   }
   
