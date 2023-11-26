@@ -24,7 +24,7 @@ body {
     align-items:center;
     height: 25%;
    
-    background-color: #017afb;
+    background-color: white;
     
   }
   
@@ -41,7 +41,7 @@ body {
     display: flex;
     width: 100%;
     height: 400px;
-    background-color: #017afb;
+    background-color: white;
     justify-content: center;
     align-items: center;
   }
@@ -75,8 +75,8 @@ body {
     margin: 0 25px 25px 25px;
     align-items: center;
     position: relative;
-    background-color: rgb(40, 40, 40);
-   
+    
+    background: linear-gradient(to right, rgb(153, 0, 255),#7700ff, #0059ff);
     z-index: 7;
    
     width: 25%;
@@ -117,20 +117,20 @@ body {
     text-align: center;
     font-size: 25px;
 
-    color: rgb(216, 214, 214);
+    color: rgb(255, 255, 255);
    
 
   }
   
   .formation p {
     text-align: center;
-    color: rgb(183, 166, 166) ;
+    color: rgb(206, 206, 206) ;
     font-size: 16px;
     margin: 10px;
   }
   .formation a {
     text-align: center;
-    color: rgb(185, 218, 55);
+    color: rgb(237, 255, 164);
    
   }
   
@@ -167,6 +167,7 @@ body {
     align-items: center;
     width: 100%;
     height: 600px;
+  
     
   }
   
@@ -181,6 +182,7 @@ body {
   .prof {
     display: flex;
     background-color: #8bc3f4;
+    background: linear-gradient(to right, rgb(124, 0, 200), #043082);
     flex-direction: column;
     width: 35%;
     height: 300px;
@@ -197,14 +199,14 @@ body {
   .prof h1 {
     text-align: center;
     font-weight: bold;
-    color: #0047FF;
+    color: #ffffff;
     font-size: 25px;
     margin: 10px;
   }
   
   .prof p {
     text-align: center;
-    color: rgb(4, 19, 56);
+    color: rgb(213, 213, 214);
     font-size: 18px;
     margin: 5px;
   }
