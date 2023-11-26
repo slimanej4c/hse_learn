@@ -3,7 +3,10 @@ import React ,{  useState } from 'react'
 import { connect } from 'react-redux'
 import { Login_redux } from '../../Redux';
 import Image from 'next/image';
+
 export const login = (props) => {
+ 
+
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
   

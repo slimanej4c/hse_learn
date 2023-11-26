@@ -4,7 +4,8 @@ export const images_presentation = [{'image': '/static/images/image2.jpg',
 'svg_prof2' :'/static/images/svg3.svg',
 'prof_img1' :'/static/images/img1.jpg',
 'prof_img2' :'/static/images/img2.jpg',
-'color': '#14162F', 'id': 1 ,'fcolor':"#E0A200",'svg':'/static/images/svg1.svg'},
+'color': '#14162F', 'id': 1 ,'fcolor':"#E0A200",'svg':'/static/images/svg1.svg'
+,'svg4':'/static/images/svg4.svg'},
  ]
 export const titles_presentation = [
     {

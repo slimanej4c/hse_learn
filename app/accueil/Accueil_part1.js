@@ -8,6 +8,7 @@ import { images_presentation, titles_presentation, aprops_presentation, button_p
 
 export const Accueil_part1 = (props) => {
 
+
   const [currentImage, setCurrentImage] = useState(0);
 
   const imageVariants = {
@@ -90,7 +91,7 @@ export const Accueil_part1 = (props) => {
           </motion.p>
           <button onClick={() => null} > {button_presentation[0]['FR']}
           </button>
-
+        
         </div>
         <div className="presentation-img">
           <AnimatePresence>

@@ -18,13 +18,13 @@ export default function Home() {
 
           </div>
 
-
-      <div
+           <div
         className="presentation-sous-svg"
         style={{ backgroundImage: `url(${images_presentation[0].svg})` }}
 
         key={0}
-      />
+      /> 
+    
 
   </section>
   <Accueil_part2/>

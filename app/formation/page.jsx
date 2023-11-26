@@ -3,8 +3,22 @@ import { connect } from 'react-redux'
 import React, { useState,useEffect} from 'react'
 import {fetchFormations} from '../../Redux';
 import {fetchGroupe} from '../../Redux';
+
 //1108abcd
 const formation = (props) => {
+  const [viewport, setViewport] = useState({
+    width: '100%',
+    height: 400,
+    latitude: 37.7577,
+    longitude: -122.4376,
+    zoom: 8,
+  });
+
+  const markers = [
+    { latitude: 37.7577, longitude: -122.4376, title: 'San Francisco' },
+    { latitude: 34.0522, longitude: -118.2437, title: 'Los Angeles' },
+    // Ajoutez autant de marqueurs que nécessaire
+  ];
    
     useEffect(() => {
       props.fetchFormations()
@@ -20,6 +34,8 @@ const formation = (props) => {
    
     return(
     <div className="formation-all-container">
+    
+     
        
         <div className="formation-container">
             {props.formations.map((item)=>{

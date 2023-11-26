@@ -12,8 +12,8 @@ export const Accueil_part2 = () => {
 
  
   const mession_itemVariants = {
-    hidden: {opacity: 0 ,x:-100 ,y:0},
-    visible: { opacity: 1, x:0,y:0, transition: { duration: 2  , type: "spring",} },
+    hidden: {opacity: 0 ,x:-100 ,y:0, rotateY: 200 },
+    visible: { rotateY: 0 ,opacity: 1, x:0,y:0, transition: { duration: 2  , type: "spring",} },
   };
   
 
@@ -33,7 +33,7 @@ export const Accueil_part2 = () => {
             className='formation'
             key={formation_text[0]['FR'].id}
             variants={mession_itemVariants}
-
+            whileHover={{ rotateY: 20 }}
             viewport={{ once: true }}
             initial='hidden'
             whileInView='visible'
@@ -62,7 +62,7 @@ export const Accueil_part2 = () => {
             className='formation'
             key={formation_text[1]['FR']}
             variants={mession_itemVariants}
-
+            whileHover={{ rotateY: 20 }}
             viewport={{ once: true }}
             initial='hidden'
             whileInView='visible'
@@ -90,7 +90,7 @@ export const Accueil_part2 = () => {
             className='formation'
             key={formation_text[2]['FR']}
             variants={mession_itemVariants}
-
+            whileHover={{ rotateY: 20 }}
             viewport={{ once: true }}
             initial='hidden'
             whileInView='visible'
@@ -112,9 +112,15 @@ export const Accueil_part2 = () => {
         </AnimatePresence>
 
       </div>
+      <div
+        className="presentation-sous-svg4"
+        style={{ backgroundImage: `url(${images_presentation[0].svg4})` }}
+
+        key={0}
+      /> 
    
     </div>
-
+    
     <div className='prof-part'>
       <div className='prof-part1'>
         <div className='prof' style={{
