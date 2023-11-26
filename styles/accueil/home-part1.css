@@ -119,14 +119,14 @@ body {
     }
     
     .presentation-sous-svg {
-      background-size: auto;
+      background-size: cover;
       background-position:center center ;
       width: 100%;
       height: 600px;
       position: absolute;
      
       z-index: 7;
-      top: 22%;
+      top: 25%;
       background-repeat: no-repeat;
     }
     
