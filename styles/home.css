@@ -34,7 +34,12 @@
     font-size: 60px;
     letter-spacing: 8px;
 }
-
+.presentation-title::after {
+ 
+  background: linear-gradient(45deg, #fff, transparent); /* Couleur de l'éclairage */
+  z-index: -1;
+  opacity: 0.5; /* Ajustez l'opacité selon vos préférences */
+}
 .presentation-title p {
     font-size: 30px;
     text-align: center;

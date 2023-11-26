@@ -1,7 +1,7 @@
 <svg width="3844" height="1000" viewBox="0 0 3844 1889" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_248_74)">
 <path d="M0 1809V924.711C1907 924.711 3185 1036 3831 40V1164C3831 1164 547 1161 0 1809Z" fill="url(#paint0_linear_248_74)"/>
-<path d="M0 1809V924.711C1907 924.711 3185 1036 3831 40V1164C3831 1164 547 1161 0 1809Z" stroke="white"/>
+<path d="M0 1809V924.711C1907 924.711 3185 1036 3831 40V1164C3831 1164 547 1161 0 1809Z" stroke="#017afb"/>
 </g>
 <defs>
 <filter id="filter0_d_248_74" x="-40" y="0" width="3951" height="1889" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -15,9 +15,9 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_248_74" result="shape"/>
 </filter>
 <linearGradient id="paint0_linear_248_74" x1="1000.5" y1="40" x2="1000.5" y2="1400.93" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop stop-color="white"/>
-<stop offset="0.0001" stop-color="white"/>
+<stop stop-color="#017afb"/>
+<stop stop-color="#017afb"/>
+<stop offset="0.0001" stop-color="#017afb"/>
 <stop offset="0.0002" stop-color="#017afb"/>
 <stop offset="1" stop-color="#017afb"/>
 </linearGradient>
