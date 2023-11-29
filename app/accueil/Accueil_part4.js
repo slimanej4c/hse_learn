@@ -5,7 +5,15 @@ import { connect } from 'react-redux'
 import {temoignage_text  ,} from "./temoignage"
 import {Set_current_image_redux } from '../../Redux'
 import { motion, useAnimation, useMediaQuery ,AnimatePresence} from "framer-motion";
-export const Accueil_part4 = (props) => {
+import {faLocationDot ,faPhone ,faMobilePhone ,faEnvelope ,faBank ,faMoneyBill,faChevronLeft, faChevronRight
+
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {
+  faFacebook ,faTwitter,faLinkedin
+  
+} from "@fortawesome/free-brands-svg-icons";
+export const Accueil_part4 = () => {
 
   const [currentFigure, setcurrentFigure] = useState(0);
 
@@ -49,14 +57,6 @@ export const Accueil_part4 = (props) => {
       },);
     }
   }, [isMobile, controls]);
-  const moveListForward = () => {
-    setanime(false)
-    setindex(index+1)
-    const newList = [...numberList];
-    const firstItem = newList.shift();
-    newList.push(firstItem);
-    setNumberList(newList);
-  };
   useEffect(() => {
     const interval = setInterval(() => {
       setanime2(true)
@@ -84,11 +84,19 @@ export const Accueil_part4 = (props) => {
   const change_figure = (myParam) => {
     setstop_auto_figure(false)
     sety_init(y_init+1)
+    setanime2(true)
+    
+    
+    console.log(y_init)
 
      if (myParam==="prev"){
        sety_init_figure('-100%')
       sety_exit_figure(true)
-   
+      setindex(index-1)
+      const newList = [...numberList];
+      const firstItem = newList.shift();
+      newList.push(firstItem);
+      setNumberList(newList);
     
      
     
@@ -96,12 +104,37 @@ export const Accueil_part4 = (props) => {
      else{
       sety_init_figure('100%')
       sety_exit_figure(false)
-    
+      setindex(index+1)
+      const newList = [...numberList];
+      const firstItem = newList.shift();
+      newList.push(firstItem);
+      setNumberList(newList);
       
   };
   
 }
-
+  
+const image_figuretVariantsr = {
+  initial: {
+    opacity: 0,
+    x:"-100%",
+  },
+  animate: {
+    opacity: 1,
+    x: '0%',
+    transition: {
+      duration: 1,
+    },
+  },
+  exit: {
+    opacity: 0,
+    x:"100%",
+    transition: {
+      duration: 1,
+    },
+  },
+  
+};
 
 const image_figuretVariantsl = {
   initial: {
@@ -142,16 +175,15 @@ const image_figuretVariantsl = {
   
   
       
-  
-   
-      
   return (
     <section className='home-part4'>
+      
        
         <div className='home-slider1' style={{}}>
         <h1>AVIS</h1>
             <div className='inside'>
-             
+            <FontAwesomeIcon icon={faChevronLeft}  className="footer-icon" onClick={() => change_figure("prev") }/>
+                          <FontAwesomeIcon icon={faChevronRight}  className="footer-icon" onClick={() => change_figure("next") }/>
                             
                           <div className='slider1-items'>
                         
@@ -162,7 +194,7 @@ const image_figuretVariantsl = {
                                   <AnimatePresence >
                             
                                   <motion.div className='slider1-item' style={{backgroundColor:"white" }}
-                                  variants={anime2 &&  image_figuretVariantsl}
+                                  variants={y_exit_figure ? image_figuretVariantsr : image_figuretVariantsl}
                                   initial="initial"
                                   animate="animate"
                                   exit={isMobile && "exit"}

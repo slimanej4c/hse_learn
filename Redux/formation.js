@@ -15,7 +15,8 @@ import {
   
 export const fetchFormations = () => async dispatch => {
     try {
-      const response = await axios.get('https://slimane16.pythonanywhere.com/blog/formations'); // Assurez-vous d'ajuster l'URL en fonction de votre configuration
+      //const response = await axios.get('https://slimane16.pythonanywhere.com/blog/formations'); // Assurez-vous d'ajuster l'URL en fonction de votre configuration
+      const response = await axios.get('http://127.0.0.1:8000//blog/formations'); // Assurez-vous d'ajuster l'URL en fonction de votre configuration
       dispatch({ type: FETCH_FORMATIONS_SUCCESS, payload: response.data });
     } catch (error) {
       dispatch({ type: FETCH_FORMATIONS_ERROR, payload: error });
@@ -23,7 +24,8 @@ export const fetchFormations = () => async dispatch => {
   };
   export const fetchGroupe = () => async (dispatch) => {
     try {
-      const response = await axios.get('https://slimane16.pythonanywhere.com/blog/groupes'); // Assurez-vous d'ajuster l'URL en fonction de votre configuration
+      //const response = await axios.get('https://slimane16.pythonanywhere.com/blog/groupes'); // Assurez-vous d'ajuster l'URL en fonction de votre configuration
+      const response = await axios.get('http://127.0.0.1:8000//blog/groupes'); // Assurez-vous d'ajuster l'URL en fonction de votre configuration
       dispatch({ type: FETCH_GROUPE, payload: response.data });
     } catch (error) {
       dispatch({ type: FETCH_GROUPE_ERROR, payload: error });

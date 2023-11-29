@@ -43,11 +43,16 @@ const formation = (props) => {
             <div className='formation-all'>
               <div className="formations">
                     <h3 key={item.id} className="">{item.nom}</h3>
+      
+   <img src={`http://localhost:8000${item.image_url}`} alt={item.image_url} className="profile" />
+
+       
               </div>
               <div className="groupes">
                     { props.groupes.map((groupe)=>
                                 (
                                   <div className="">
+                                     
                                   {item.id==groupe.formation &&  <h5 key={groupe.id} className="">{groupe.nom}</h5>} 
                                   {item.id==groupe.formation &&  <p>{groupe.date_debut} - {groupe.date_fin}</p>} 
                                   {item.id==groupe.formation &&  <p>nombre des places: {groupe.nombre_de_places} </p>} 

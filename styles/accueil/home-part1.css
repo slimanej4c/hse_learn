@@ -28,11 +28,7 @@ body {
     height: 2300px;
   }
   
-  .section2 {
-    background-color: rgb(255, 255, 255);
-    height: 1000px;
-  }
-  
+ 
   .home-part1 {
     display: flex;
     flex-direction: column;

@@ -1,8 +1,8 @@
 :root {
   
   margin: auto; 
-  --navbar_color:#ffffff;
-  --navbar_mobile_color:#424223;
+  --navbar_color:rgb(0, 0, 0);
+  --navbar_mobile_color:#ffffff;
   --navbar_mobile_ul: #e3f5f0;
   --navbar_mobile_click:#81AA5B;
   --mather-color:#e3f5f0;
