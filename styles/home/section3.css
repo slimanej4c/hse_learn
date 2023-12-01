@@ -1,0 +1,48 @@
+.section3-parent{
+    display: flex;
+    position: relative;
+    height: 700px;
+  width: 100%;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+  overflow: hidden;
+  }
+  .section3-container{
+   display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .prof-image-fixe{
+ 
+    height: 100%;
+    width:100%;
+   left: 0%;
+   z-index: 10;
+    background-size: cover;
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+
+  }
+  .section3-container .left{
+    position: relative;
+   height: 100%;
+width: 50%;
+background-color: transparent;
+
+  }
+  .section3-container .right{
+   
+    height: 100%;
+    width: 50%;
+    background-color: rgb(0, 255, 179);
+
+  }

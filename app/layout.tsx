@@ -1,11 +1,13 @@
 
 "use client";
 import '../styles/Layout.css'
-import '../styles/formation.css'
+
 import '../styles/footer.css'
 import './globals.css'
 import '../styles/home.css'
 import '../styles/home/section1.css'
+import '../styles/home/section2.css'
+import '../styles/home/section3.css'
 import '../styles/login.css'
 import '../styles/slider_avis.css'
 import { Provide_redux } from "../Redux/provider";
@@ -40,7 +42,7 @@ export default function RootLayout({
         </div>
         
         </div>
-        <Footer/>
+     <Footer/>
         </div>
         </Provide_redux>
 

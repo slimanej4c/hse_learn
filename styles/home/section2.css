@@ -1,0 +1,241 @@
+.section2-parent{
+    display: flex;
+    position: relative;
+    height: 700px;
+  width: 100%;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background:linear-gradient(to right, #020005 ,#010049);
+  overflow: hidden;
+  }
+  .section2-container{
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .formations-title{
+ 
+   display: flex;
+   height: 10%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .formations-title h1{
+        text-align: center;
+        color: aliceblue;
+        font-size: 45px;
+        letter-spacing: 10px;
+   }
+
+   .formation-container{
+   
+    display: flex;
+    height: 80%;
+     width: 100%;
+    
+     justify-content: center;
+     align-items: center;
+
+   }
+   .formations-type{
+    display: flex;
+    height:100%;
+     width: 100%;
+  
+     justify-content: center;
+     align-items: center;
+
+   }
+   .formation{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+     width:25%;
+     background-color: #5820a7;
+     margin: 10px;
+ 
+    
+   }
+  
+   
+  
+ 
+   .formation-image{
+    height: 40%;
+    width: 100%;
+    background-color: rgb(252, 254, 255);
+    background-size: cover;
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+ }
+ .formation-text{
+    background-color: rgb(145, 145, 12);
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .formation-text .title{
+
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .formation-text .text{
+   
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .formation-text h1{
+  
+    width: 100%;
+    text-align: center;
+   
+    
+   }
+   .formation-text p{
+  
+ 
+    text-align: center;
+    margin: 10px;
+   
+   }
+   .formation-text a{
+    margin-left: 2px;
+    color: rgb(0, 16, 29);
+   
+   }
+
+   @media screen and (max-width: 1000px) {
+   
+    .formation{
+     
+         width:30%;
+        
+        
+       }
+       .formation-text .title{
+
+        height: 15%;
+     
+        
+       }
+       .formation-text h1{
+  
+      font-size: 22px;
+       
+        
+       }
+       .formation-text p{
+      
+        font-size: 14px;
+       
+       }
+       .formation-text a{
+        font-size: 14px;
+       
+       }
+    
+  }
+
+  @media screen and (max-width: 700px) {
+    .section2-parent {
+        height: 1600px; /* Utilisez px au lieu de rem */
+        justify-content: center;
+      
+        align-items: center;
+    }
+
+    .section2-container {
+        height: 100%; /* Utilisez px au lieu de rem */
+        justify-content: center;
+       margin-top: 10%;
+        align-items: center;
+    }
+    .formations-title{
+        height: 5%;
+        width: 100%;
+      background-color: rgb(105, 99, 221);
+   
+       }
+       .formations-title h1{
+        font-size: 25px;
+        letter-spacing: 4px;
+        
+       
+       }
+    .formations-type {
+        flex-direction: column;
+        height: 95%;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .formation {
+        width: 85%;
+       height: 33%;
+    }
+    .formation-image{
+        height: 50%;
+      
+     }
+     .formation-text  {
+        height: 50%;
+    }
+
+    .formation-text .title {
+        height: 15%;
+       
+    }
+
+    .formation-text h1 {
+        font-size: 22px;
+    }
+
+    .formation-text p {
+        font-size: 14px;
+    }
+
+    .formation-text a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .section2-container {
+       
+       margin-top: 5%;
+   
+    }
+   
+    .formations-title h1{
+        font-size: 22px;
+        
+       
+       }
+       .formation-text h1 {
+        font-size: 18px;
+    }
+
+    .formation-text p {
+        font-size: 12px;
+    }
+    .formation-text a {
+        font-size: 12px;
+    }
+  }

@@ -40,7 +40,7 @@ export const formation_text = [
 
   export const formation_title = [
     {
-      "FR": "Nos Formations",
+      "FR": "- NOS FORMATIONS -",
       "ENG": "missions",
       "DE": "Missionen"
     },
@@ -51,15 +51,15 @@ export const formation_text = [
     }
   ];
 
-  export const formation_image=[
-    {image:"/static/images/accueil/children1.jpg"},
-    {image:"/static/images/accueil/children2.jpg"},
-    {image:"/static/images/accueil/children3.jpg"},
-    {image:"/static/images/accueil/children4.jpg"},
-    {image:"/static/images/accueil/children5.jpg"},
+  export const formation_image={fromation1:"/static/images/formation1.jpg",
+  formation2:"/static/images/formation2.jpg",
+  formation3:"/static/images/formation3.jpg",
+  prof1:"/static/images/prof1.jpg"}
+
+   
    
 
-]
+
   
 
 export const formation_prof = [

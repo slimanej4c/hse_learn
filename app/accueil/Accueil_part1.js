@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { connect } from 'react-redux'
 import { motion, AnimatePresence } from "framer-motion"
-import { formation_text, formation_title, formation_image ,formation_prof} from './formation'
+import { formation_text, formation_title, formation_image ,formation_prof} from '../home/formation'
 import { images_presentation, titles_presentation, aprops_presentation, button_presentation } from "../home/presentation"
 
 export const Accueil_part1 = (props) => {
