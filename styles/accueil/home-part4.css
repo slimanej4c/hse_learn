@@ -2,12 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
-/* Styles pour la section contenant le slider */
-.section2 {
-  background-color: rgb(255, 255, 255);
-  height: 2000px;
-  padding-top: 10%;
-}
 
 .home-part4 {
   display: flex;

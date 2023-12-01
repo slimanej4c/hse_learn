@@ -1,16 +1,19 @@
 import Image from 'next/image'
 import Accueil_part1 from "./accueil/Accueil_part1"
 import Accueil_part2 from "./accueil/Accueil_part2"
+import Section1 from "./home/section1"
 import Accueil_part4 from "./accueil/Accueil_part4"
+import Slider_avis from "./accueil/Slider_avis"
 import { formation_text, formation_title, formation_image ,formation_prof} from './accueil/formation'
-import { images_presentation, titles_presentation, aprops_presentation, button_presentation } from "./accueil/presentation"
+import { images_presentation, titles_presentation, aprops_presentation, button_presentation } from "./home/presentation"
 export default function Home() {
+  //
   return (
     <div className='home-all-section'>
     <section className='section1'>
-    <section className='home-part1'>
-    <Accueil_part1/>
-          <div   className="presentation-img-fixed"
+   
+    <Section1 />
+    {/**  <div   className="presentation-img-fixed"
         style={{ backgroundImage: `url(${images_presentation[0].image_fixed})` }}>
           <div className='presentation-img-fixed-div'>
 
@@ -23,14 +26,21 @@ export default function Home() {
         style={{ backgroundImage: `url(${images_presentation[0].svg})` }}
 
         key={0}
-      /> 
+      />  */}
+        
     
 
-  </section>
-  <Accueil_part2/>
+
+  
   </section>
   <section className='section2' >
-  <Accueil_part4/>
+ 
+  
+ 
+   </section>
+   <section className='section3' >
+ 
+
 
    </section>
   </div>

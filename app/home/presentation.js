@@ -1,4 +1,4 @@
-export const images_presentation = [{'image': '/static/images/image2.jpg',
+export const images_presentation = [{'img_section1': '/static/images/img_section1.png',
 'image_fixed' :'/static/images/image3.jpg',
 'svg_prof1' :'/static/images/svg2.svg',
 'svg_prof2' :'/static/images/svg3.svg',

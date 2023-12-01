@@ -13,20 +13,8 @@ body {
     height: 100%;
   }
   
-  .section1,
-  .section2 {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    
-    align-items: center;
-    width: 100%;
-  }
+
   
-  .section1 {
-    background-color: rgb(255, 255, 255);
-    height: 2300px;
-  }
   
  
   .home-part1 {
