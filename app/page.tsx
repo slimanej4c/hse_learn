@@ -4,8 +4,9 @@ import Accueil_part2 from "./accueil/Accueil_part2"
 import Section1 from "./home/section1"
 import Section2 from "./home/section2"
 import Section3 from "./home/section3"
+import Section4 from "./home/section4"
 import Accueil_part4 from "./accueil/Accueil_part4"
-import Slider_avis from "./accueil/Slider_avis"
+import Slider_avis from "./home/Slider_avis"
 import { formation_text, formation_title, formation_image ,formation_prof} from './home/formation'
 import { images_presentation, titles_presentation, aprops_presentation, button_presentation } from "./home/presentation"
 export default function Home() {
@@ -43,6 +44,11 @@ export default function Home() {
    <section className='section3' >
  
    <Section3/>
+
+   </section>
+   <section className='section4' >
+ 
+   <Section4/>
 
    </section>
   </div>

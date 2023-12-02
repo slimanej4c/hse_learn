@@ -2,7 +2,7 @@
 "use client"
 import React , { useState ,useEffect} from 'react'
 import { connect } from 'react-redux'
-import { temoignage_text, } from "./temoignage"
+import { temoignage_text, } from "../accueil/temoignage"
 import { motion, useAnimation, useMediaQuery ,AnimatePresence} from "framer-motion";
 export const Slider_avis = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,10 +47,11 @@ const rotateArray2 = (direction) => {
   
         if (wait_finish_anime){
             if (direction === 'forward') {
-                setdirection_anime_exit('0%')
+               
              
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % array_sliders.length);
-                
+                {!auto_change &&  setdirection_anime_exit('0%')}
+               
             } else if (direction === 'backward') {
                 setdirection_anime_exit('0%')
                 setCurrentIndex((prevIndex) =>
@@ -87,10 +88,6 @@ const rotateArray2 = (direction) => {
                     }
                    
 
-              
-               
-              
-              
              
             }, 4000);
             return () => clearInterval(interval);
@@ -112,7 +109,7 @@ const rotateArray = (direction) => {
     setauto_change(false)
     if (wait_finish_anime){
         if (direction === 'forward') {
-           
+          setdirection_anime_exit('0%')
             setdirection_anime_exit('-100%')
             setdirection_anime_init('100%')
            
