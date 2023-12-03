@@ -165,7 +165,7 @@ const image_figuretVariantsRight = {
           x: '0%',
           position:'absolute',
           transition: {
-            duration: 2,
+            duration: 1,
           },
         },
         exit: {
@@ -173,7 +173,7 @@ const image_figuretVariantsRight = {
           x:"100%",
           backgroundColor: 'red',
           transition: {
-            duration: 2,
+            duration: 1,
           },
         },
         
