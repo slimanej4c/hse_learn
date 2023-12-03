@@ -140,7 +140,7 @@ const slidersToShow = array_sliders
           opacity: 1,
           x: '0%',
           transition: {
-            duration: 4,
+            duration: 1,
           },
         },
       
@@ -149,7 +149,7 @@ const slidersToShow = array_sliders
           position:'absolute',
           x:direction_anime_exit,
           transition: {
-            duration:4,
+            duration:1,
           },
         },
       };
