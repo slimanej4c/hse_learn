@@ -48,7 +48,7 @@ background-color: transparent;
     height: 100%;
     width: 60%;
    
-    background:linear-gradient(to right, #f5eeff ,#9290ff);
+    background:linear-gradient(to right, rgb(246, 240, 255,0.5),#9290ff);
 
   }
   .section3-container .prof{
@@ -87,7 +87,7 @@ background-color: transparent;
     flex-direction: row;
     height: 300px;
      width:90%;
-     background-color: ;
+
      background:linear-gradient(to right, rgb(6, 88, 118) ,rgb(0, 2, 107));
      margin: 10px;
       overflow: hidden;
@@ -191,4 +191,21 @@ background-color: transparent;
   
     }
   
+}
+
+@media screen and (max-width: 450px) {
+ 
+  .section3-container .prof h1{
+    
+  font-size: 18px;
+
+
+  }
+  .section3-container .prof p{
+    font-size: 12px;
+
+
+
+  }
+
 }

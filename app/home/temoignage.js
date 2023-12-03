@@ -3,6 +3,7 @@ export const temoignage_text = [
         {FR: [
           {
             id: 1,
+            slider: 'slider1',
             color: 'white',
             imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg",
             imgAlt: "profile-sample1",
@@ -12,6 +13,7 @@ export const temoignage_text = [
           },
           {
             id: 2,
+            slider: 'slider2',
             color: 'white',
             imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample7.jpg",
             imgAlt: "profile-sample2",
@@ -21,6 +23,7 @@ export const temoignage_text = [
           },
           {
             id: 3,
+            slider: 'slider3',
             color: 'white',
             imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg",
             imgAlt: "profile-sample3",
@@ -30,6 +33,7 @@ export const temoignage_text = [
           },
           {
             id: 4,
+            slider: 'slider4',
             color: 'white',
             imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg",
             imgAlt: "profile-sample4",
@@ -39,6 +43,7 @@ export const temoignage_text = [
           },
           {
             id: 5,
+            slider: 'slider5',
             color: 'white',
             imgSrc: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg",
             imgAlt: "profile-sample5",

@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import { connect } from 'react-redux'
-import {temoignage_text  ,} from "./temoignage"
+import {temoignage_text  ,} from "../home/temoignage"
 import {Set_current_image_redux } from '../../Redux'
 import { motion, useAnimation, useMediaQuery ,AnimatePresence} from "framer-motion";
 import {faLocationDot ,faPhone ,faMobilePhone ,faEnvelope ,faBank ,faMoneyBill,faChevronLeft, faChevronRight

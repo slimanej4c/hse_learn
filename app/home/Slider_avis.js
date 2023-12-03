@@ -2,7 +2,7 @@
 "use client"
 import React , { useState ,useEffect} from 'react'
 import { connect } from 'react-redux'
-import { temoignage_text, } from "../accueil/temoignage"
+import { temoignage_text, } from "./temoignage"
 import { motion, useAnimation, useMediaQuery ,AnimatePresence} from "framer-motion";
 export const Slider_avis = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,13 +15,14 @@ export const Slider_avis = (props) => {
     const [isMobile, setIsMobile] = useState(false);
     const [auto_change, setauto_change] = useState(true);
    
-    const array_sliders = [
-        {id:1, slider: 'slider1' },
+    const array_sliders2 = [
+        {id:1, slider: 'slider1' ,image:""},
         { id:2,slider: 'slider2' },
         { id:3,slider: 'slider3' },
         { id:4,slider: 'slider4' },
         { id:5,slider: 'slider5' },
     ];
+    const array_sliders =  temoignage_text[0]["FR"]
     useEffect(() => {
         setIsMobile(window.innerWidth <= 750);
         const handleResize = () => {
@@ -109,7 +110,7 @@ const rotateArray = (direction) => {
     setauto_change(false)
     if (wait_finish_anime){
         if (direction === 'forward') {
-          setdirection_anime_exit('0%')
+     
             setdirection_anime_exit('-100%')
             setdirection_anime_init('100%')
            
@@ -139,7 +140,7 @@ const slidersToShow = array_sliders
           opacity: 1,
           x: '0%',
           transition: {
-            duration: 1,
+            duration: 4,
           },
         },
       
@@ -148,7 +149,7 @@ const slidersToShow = array_sliders
           position:'absolute',
           x:direction_anime_exit,
           transition: {
-            duration:1,
+            duration:4,
           },
         },
       };
@@ -180,6 +181,9 @@ const image_figuretVariantsRight = {
 
 return (
     <div className="slider_container">
+      <div className="slider_avis" >
+        <h1>LES AVIS</h1>
+      </div>
         <div className="content">
             <div className="content-top">
                 <div className="sliders">
@@ -200,7 +204,28 @@ return (
                               
                               }}
                             >
-                                {item.slider}
+                              <div  className="slider-content" >
+                              <div  className="slider-content-content" >
+                                <div className="slider-image">
+                                  <img src={item.imgSrc} alt={item.imgAlt} className="profile" />
+                                </div>
+                                <div  className="title">
+                                  <h1>{item.name}</h1>
+                                  <h1>{item.role}</h1>
+                                  
+                                </div>
+                                <div className="text">
+                              
+                                  <p>{item.quote}</p>
+                              
+                         
+                                  
+                                  </div>
+                                 
+
+                                  </div>
+                              </div>
+                               
                             </motion.div>
                             </AnimatePresence>
                         );
