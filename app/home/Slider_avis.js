@@ -4,6 +4,10 @@ import React , { useState ,useEffect} from 'react'
 import { connect } from 'react-redux'
 import { temoignage_text, } from "./temoignage"
 import { motion, useAnimation, useMediaQuery ,AnimatePresence} from "framer-motion";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faFacebook ,faTwitter,faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faLocationDot ,faPhone ,faMobilePhone ,faEnvelope ,faBank ,faMoneyBill} from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 export const Slider_avis = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [nombre_sliders, setnumber_sliders] = useState(1);
@@ -14,6 +18,7 @@ export const Slider_avis = (props) => {
     const [margin_left, setmargin_left] = useState(['0%','33%','66%'])//change ici width si 2 metre le 50
     const [isMobile, setIsMobile] = useState(false);
     const [auto_change, setauto_change] = useState(true);
+    const [forward, setforward] = useState(true);
    
     const array_sliders2 = [
         {id:1, slider: 'slider1' ,image:""},
@@ -71,7 +76,7 @@ const rotateArray2 = (direction) => {
                 
              
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % array_sliders.length);
-                
+                {!forward &&  setdirection_anime_exit('0%')}
            
             }
             {wait_finish_anime &&   setwait_finish_anime(false)}
@@ -106,16 +111,38 @@ useEffect(() => {
     }
   
     }, [direction_anime_exit]);
+
 const rotateArray = (direction) => {
-    setauto_change(false)
+    
     if (wait_finish_anime){
         if (direction === 'forward') {
-     
-            setdirection_anime_exit('-100%')
+               if(forward){
+                        
+                          if (wait_finish_anime){
+                           
+                              
+                            
+                                setCurrentIndex((prevIndex) => (prevIndex + 1) % array_sliders.length);
+                              
+                              
+                           
+                            {wait_finish_anime &&   setwait_finish_anime(false)}
+    
+        }                  
+                        
+                        setauto_change(false)
+                    }
+                else{
+                   setdirection_anime_exit('-100%')
             setdirection_anime_init('100%')
+
+                }
+           
            
             
         } else if (direction === 'backward') {
+           setforward(false)
+           setauto_change(false)
             setdirection_anime_exit('100%')
             setdirection_anime_init('-100%')
            
@@ -140,7 +167,7 @@ const slidersToShow = array_sliders
           opacity: 1,
           x: '0%',
           transition: {
-            duration: 1,
+            duration: 0.5,
           },
         },
       
@@ -149,35 +176,13 @@ const slidersToShow = array_sliders
           position:'absolute',
           x:direction_anime_exit,
           transition: {
-            duration:1,
+            duration:0.5,
           },
         },
       };
       
       
-const image_figuretVariantsRight = {
-        initial: {
-          opacity: 1,
-          x:"-100%",
-        },
-        animate: {
-          opacity: 1,
-          x: '0%',
-          position:'absolute',
-          transition: {
-            duration: 1,
-          },
-        },
-        exit: {
-          position:'absolute',
-          x:"100%",
-          backgroundColor: 'red',
-          transition: {
-            duration: 1,
-          },
-        },
-        
-      };
+
 
 return (
     <div className="slider_container">
@@ -233,8 +238,13 @@ return (
                 </div>
             </div>
             <div className="content-botom">
-                <button onClick={() => rotateArray('backward')}>Précédent</button>
-                <button onClick={() => rotateArray('forward')}>Suivant</button>
+          
+            
+            
+                <button style={{border:"0px"}} onClick={() => rotateArray('backward')}>
+                    <FontAwesomeIcon icon={faChevronLeft}  color='#f1b910' className="footer-icon"/></button>
+                <button style={{border:"0px"}}  onClick={() => rotateArray('forward')}>
+                  <FontAwesomeIcon  icon={faChevronRight} color='#f1b910' className="footer-icon"/></button>
             </div>
         </div>
     </div>

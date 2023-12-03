@@ -6,6 +6,9 @@ import Image from 'next/image';
 
 import Login from '../components/Login'
 import Register from '../components/Register'
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faFacebook ,faTwitter,faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faLocationDot ,faPhone ,faMobilePhone ,faEnvelope ,faBank ,faMoneyBill} from "@fortawesome/free-solid-svg-icons";
 const Footer = (props) => {
 const aprops_footer={"FR":"Soladirité est une association à but non lucratif qui travaille pour améliorer la vie des enfants en difficulté en leur fournissant de l'aide alimentaire, l'accès à l'eau potable, l'éducation et la santé,en collaboration avec des partenaires locaux.",
 "ENG": "Soladirité is a non-profit organization that works to improve the lives of children in need by providing them with food aid, access to clean water, education, and health care in collaboration with local partners.",
@@ -97,7 +100,7 @@ const clicked =(to_link)=>{
         <div className="footer-coordone">
               <h1>{info["Contact"]["FR"]}</h1>
                 <ul>
-                  <li>xxxxx 5, xxxxx Boniswil (SUISSE)</li>
+                  <li><FontAwesomeIcon icon={faLocationDot}  className="footer-icon"/>xxxxx 5, xxxxx Boniswil (SUISSE)</li>
                   <li> +xx xx xxx xx xx </li>
                   <li>+xx xx xxx xx xx </li>
                   <li>solidarite@domaine.com</li>

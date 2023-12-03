@@ -5,6 +5,7 @@ import Section1 from "./home/section1"
 import Section2 from "./home/section2"
 import Section3 from "./home/section3"
 import Section4 from "./home/section4"
+import Section5 from "./home/section5"
 import Accueil_part4 from "./accueil/Accueil_part4"
 import Slider_avis from "./home/Slider_avis"
 import { formation_text, formation_title, formation_image ,formation_prof} from './home/formation'
@@ -51,7 +52,13 @@ export default function Home() {
    <Section4/>
 
    </section>
+   <section className='section5' >
+ 
+   <Section5/>
+
+   </section>
   </div>
+
   
   )
 }
