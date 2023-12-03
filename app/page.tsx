@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import Accueil_part1 from "./accueil/Accueil_part1"
 import Accueil_part2 from "./accueil/Accueil_part2"
 import Section1 from "./home/section1"

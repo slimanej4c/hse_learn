@@ -8,9 +8,9 @@ faUsers, // Icône pour le nombre total d'étudiants
 faCertificate } from "@fortawesome/free-solid-svg-icons";
 export const section5 = (props) => {
   return (
-    <div className="stats-section">
+    <div className="section5-parent">
     <div className="stat-item">
-      <FontAwesomeIcon icon={faBookOpen} />
+      <FontAwesomeIcon width={50} icon={faBookOpen} />
       <p>Les cours en cours</p>
     </div>
     <div className="stat-item">

@@ -9,6 +9,7 @@ import '../styles/home/section1.css'
 import '../styles/home/section2.css'
 import '../styles/home/section3.css'
 import '../styles/home/section4.css'
+import '../styles/home/section5.css'
 import '../styles/login.css'
 import '../styles/slider_avis.css'
 import { Provide_redux } from "../Redux/provider";
